@@ -6,6 +6,9 @@
 ### 1. Register yourself for Hacktoberfest
 ###### Link to register: https://hacktoberfest.digitalocean.com/sign_up/register
 
+![screenshot 147](https://user-images.githubusercontent.com/37223446/47229289-00d91b80-d3e5-11e8-8f6e-5be4ad9da7b2.png)
+
+
 
 ### 2. Fork and Star this Repository
 ###### You can fork this repository on GitHub by navigating at the top of this repository.
@@ -13,6 +16,11 @@
 ###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
 
 https://github.com/acmbvp/Hacktoberfest/
+
+![screenshot-fork](https://user-images.githubusercontent.com/37223446/47229495-77761900-d3e5-11e8-9de0-1891f5f7b245.png)
+
+![screenshot-star](https://user-images.githubusercontent.com/37223446/47229499-79d87300-d3e5-11e8-9f2f-84e0d49e0439.png)
+
 
 ###### When you’re on the main page for the repository, you’ll see a “Fork” button on your upper right-hand side of the page, underneath your user icon:
 
