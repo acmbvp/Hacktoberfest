@@ -3,10 +3,10 @@
 # Instructions :
 
 
-#### 1. Register yourself for Hacktoberfest
+### 1. Register yourself for Hacktoberfest
 ###### Link to register: https://hacktoberfest.digitalocean.com/sign_up/register
 
-#### 2. Fork and Star this Repository
+### 2. Fork and Star this Repository
 ###### You can fork this repository on GitHub by navigating at the top of this repository.
 
 ###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
@@ -15,7 +15,7 @@ https://github.com/acmbvp/Hacktoberfest/
 
 ###### When you’re on the main page for the repository, you’ll see a “Fork” button on your upper right-hand side of the page, underneath your user icon:
 
-#### 3. Clone the Repository
+### 3. Clone the Repository
 
 ###### To make your own local copy of the repository you would like to contribute to, let’s first open up a terminal window.
 
@@ -30,11 +30,11 @@ photo
 
 git clone https://github.com/your-username/Hacktoberfest.git
 
-#### 4. Create a New Branch
+### 4. Create a New Branch
 
 ###### To create your branch, from your terminal window, change your directory so that you are working in the directory of the repository. Be sure to use the actual name of the repository (i.e. Hacktoberfest) to change into that directory.
 
-##### cd Hacktoberfest
+##### // cd Hacktoberfest //
 
 ###### Now, we’ll create our new branch with the git branch command. Make sure you name it descriptively so that others working on the project understand what you are working on.
 
@@ -69,13 +69,13 @@ git clone https://github.com/your-username/Hacktoberfest.git
 ###### // Example: //
 ##### // git push --set-upstream origin new-branch //
 
-#### 5. Update Local Repository
+### 5. Update Local Repository
 
 ###### While you are working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will cause conflicts. To keep your local copy of the code base updated, you’ll need to sync changes.
 
 ###### We’ll first go over configuring a remote for the fork, then syncing the fork.
 
-#### 6. Configure a Remote for the Fork
+### 6. Configure a Remote for the Fork
 
 ###### Next, you’ll have to specify a new remote upstream repository for us to sync with the fork. This will be the original repository that you forked from. you’ll have to do this with the git remote add command.
 
@@ -83,7 +83,7 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### In this example, // upstream // is the shortname we have supplied for the remote repository since in terms of Git, “upstream” refers to the repository that you cloned from. If you want to add a remote pointer to the repository of a collaborator, you may want to provide that collaborator’s username or a shortened nickname for the shortname.
 
-#### Sync the Fork
+### 7. Sync the Fork
 
 ###### Once you have configured a remote that references the upstream and original repository on GitHub, you are ready to sync your fork of the repository to keep it up-to-date.
 ###### To sync your fork, from the directory of your local repository in a terminal window, you’ll have to use the // git fetch // command to fetch the branches along with their respective commits from the upstream repository. Since you used the shortname “upstream” to refer to the upstream repository, you’ll have to pass that to the command:
@@ -98,7 +98,7 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ##### // git merge upstream/master //
 
-#### 7. Create Pull Request
+### 8. Create Pull Request
 
 ###### At this point, you are ready to make a pull request to the original repository.
 
