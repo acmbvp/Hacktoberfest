@@ -3,9 +3,9 @@
 # Instructions :
 
 #### 1. Fork the Repository
-**You can fork this repository on GitHub by navigating at the top of this repository.
+###### You can fork this repository on GitHub by navigating at the top of this repository.
 
-**GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
+###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
 
 https://github.com/acmbvp/Hacktoberfest/
 
