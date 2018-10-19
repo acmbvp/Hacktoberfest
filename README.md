@@ -6,6 +6,7 @@
 ### 1. Register yourself for Hacktoberfest
 ###### Link to register: https://hacktoberfest.digitalocean.com/sign_up/register
 
+
 ### 2. Fork and Star this Repository
 ###### You can fork this repository on GitHub by navigating at the top of this repository.
 
