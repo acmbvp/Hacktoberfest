@@ -34,10 +34,14 @@ https://github.com/acmbvp/Hacktoberfest/
 https://github.com/your-username/Hacktoberfest.git
 
 ###### You can alternatively copy the URL by using the green “Clone or download” button from your repository page that you just forked from the original repository page. Once you click the button, you’ll be able to copy the URL by clicking the binder button next to the URL:
-photo
+
+![screenshot 73](https://user-images.githubusercontent.com/37223446/47234826-b495d780-d3f4-11e8-9077-859ed9078677.png)
+
 ###### Once we have the URL, we’re ready to clone the repository. To do this, we’ll combine the git clone command with the repository URL from the command line in a terminal window:
 
 git clone https://github.com/your-username/Hacktoberfest.git
+
+![screenshot 153](https://user-images.githubusercontent.com/37223446/47234624-0f7aff00-d3f4-11e8-81c4-9198e3e83860.png)
 
 ### 4. Create a New Branch
 
