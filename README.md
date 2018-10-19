@@ -51,6 +51,8 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Now, we’ll create our new branch with the git branch command. Make sure you name it descriptively so that others working on the project understand what you are working on.
 
+![screenshot 154](https://user-images.githubusercontent.com/37223446/47234964-240bc700-d3f5-11e8-9837-50685ad44382.png)
+
 ##### // git branch new-branch //
 
 ###### Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
