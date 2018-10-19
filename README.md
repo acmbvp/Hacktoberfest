@@ -15,8 +15,8 @@ https://github.com/acmbvp/Hacktoberfest/
 
 ###### To make your own local copy of the repository you would like to contribute to, let’s first open up a terminal window.
 
-###### We’ll use the **git clone** command along with the URL that points to your fork of the repository.
+###### We’ll use the // git clone //  command along with the URL that points to your fork of the repository.
 
-###### This URL will be similar to the URL above, except now it will end with **.git.** In the cloud_haiku example above, the URL will look like this:
+###### This URL will be similar to the URL above, except now it will end with // .git.// In the cloud_haiku example above, the URL will look like this:
 
 #### 3. Create a new branch for your modifications (i.e. ** git 
