@@ -113,4 +113,4 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### You should navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
 
-# Hurray!! You just got close to complete your hacktoberfest challenge.
+# Hurray!! You just got closer to complete your hacktoberfest challenge.
