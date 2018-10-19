@@ -102,6 +102,9 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ##### // git remote add upstream https://github.com/acmbvp/Hacktoberfest.git //
 
+
+![screenshot 74](https://user-images.githubusercontent.com/37223446/47235672-5f0efa00-d3f7-11e8-9e45-1af02d8b969b.png)
+
 ###### In this example, // upstream // is the shortname we have supplied for the remote repository since in terms of Git, “upstream” refers to the repository that you cloned from. If you want to add a remote pointer to the repository of a collaborator, you may want to provide that collaborator’s username or a shortened nickname for the shortname.
 
 ### 7. Sync the Fork
