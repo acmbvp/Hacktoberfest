@@ -84,7 +84,11 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
 ###### // Example: // 
-##### // git commit -m "Fixed documentation typos" //
+##### // git commit -m "Updated Readme.md" //
+
+
+![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)
+
 
 ###### At this point you can use the git push command to push the changes to the current branch of your forked repository:
 ###### // Example: //
