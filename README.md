@@ -40,3 +40,36 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ##### git checkout new-branch
 
+###### Once you enter the git checkout command, you will receive the following output:
+
+###### Output:
+##### Switched to branch 'new-branch'
+
+###### At this point, you can now modify existing files or add new files to the project on your own branch.
+
+#### Make Changes Locally 
+
+###### Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
+
+##### git add -A 
+
+###### Next, we’ll want to record the changes that we made to the repository with the git commit command.
+
+###### The commit message is an important aspect of your code contribution; it helps the other contributors fully understand the change you have made, why you made it, and how significant it is. Additionally, commit messages provide a historical record of the changes for the project at large, helping future contributors along the way.
+
+###### If you have a very short message, you can record that with the -m flag and the message in quotes:
+###### Example: 
+##### git commit -m "Fixed documentation typos"
+
+###### At this point you can use the git push command to push the changes to the current branch of your forked repository:
+###### Example:
+##### git push --set-upstream origin new-branch
+
+#### 4. Update Local Repository
+
+###### While you are working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will cause conflicts. To keep your local copy of the code base updated, you’ll need to sync changes.
+
+###### We’ll first go over configuring a remote for the fork, then syncing the fork.
+
+#### Configure a Remote for the Fork
+
