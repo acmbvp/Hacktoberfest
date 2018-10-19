@@ -70,11 +70,17 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
 
-##### // git add -A //
+##### // git add -A // or // git add . //
+
+![screenshot 154](https://user-images.githubusercontent.com/37223446/47235231-0ee36800-d3f6-11e8-9ea8-aeeca5baf993.png)
+
 
 ###### Next, we’ll want to record the changes that we made to the repository with the git commit command.
 
 ###### The commit message is an important aspect of your code contribution; it helps the other contributors fully understand the change you have made, why you made it, and how significant it is. Additionally, commit messages provide a historical record of the changes for the project at large, helping future contributors along the way.
+
+
+![screenshot 155](https://user-images.githubusercontent.com/37223446/47235390-87e2bf80-d3f6-11e8-81c0-e01b7463d038.png)
 
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
 ###### // Example: // 
