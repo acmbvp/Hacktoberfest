@@ -1,0 +1,32 @@
+Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+
+Function Description:
+ =>Complete the aVeryBigSum function. It must return the sum of all array elements.
+
+aVeryBigSum has the following parameter(s):
+ar: an array of integers .
+
+Input Format:
+ =>The first line of the input consists of an integer . 
+ =>The next line contains  space-separated integers contained in the array.
+
+Output Format: Print the integer sum of the elements in the array.
+
+
+
+
+#!/bin/python3
+
+
+# the aVeryBigSum function 
+def aVeryBigSum(ar):
+    sum=0
+    for i in range(len(ar)):
+        sum=sum+ar[i]
+    return sum
+if __name__ == '__main__':
+    ar_count = int(input())
+    ar = list(map(int, input().rstrip().split()))
+    result = aVeryBigSum(ar)
+    print(result)
+   
