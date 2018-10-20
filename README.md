@@ -72,7 +72,7 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ##### // git add -A // or // git add . //
 
-![screenshot 154](https://user-images.githubusercontent.com/37223446/47235231-0ee36800-d3f6-11e8-9ea8-aeeca5baf993.png)
+![screenshot 155](https://user-images.githubusercontent.com/37223446/47253493-417e7680-d471-11e8-83cf-a4f969da5131.png)
 
 
 ###### Next, we’ll want to record the changes that we made to the repository with the git commit command.
