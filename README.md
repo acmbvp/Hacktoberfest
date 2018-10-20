@@ -34,10 +34,14 @@ https://github.com/acmbvp/Hacktoberfest/
 https://github.com/your-username/Hacktoberfest.git
 
 ###### You can alternatively copy the URL by using the green “Clone or download” button from your repository page that you just forked from the original repository page. Once you click the button, you’ll be able to copy the URL by clicking the binder button next to the URL:
-photo
+
+![screenshot 73](https://user-images.githubusercontent.com/37223446/47234826-b495d780-d3f4-11e8-9077-859ed9078677.png)
+
 ###### Once we have the URL, we’re ready to clone the repository. To do this, we’ll combine the git clone command with the repository URL from the command line in a terminal window:
 
 git clone https://github.com/your-username/Hacktoberfest.git
+
+![screenshot 153](https://user-images.githubusercontent.com/37223446/47234624-0f7aff00-d3f4-11e8-81c4-9198e3e83860.png)
 
 ### 4. Create a New Branch
 
@@ -46,6 +50,8 @@ git clone https://github.com/your-username/Hacktoberfest.git
 ##### // cd Hacktoberfest //
 
 ###### Now, we’ll create our new branch with the git branch command. Make sure you name it descriptively so that others working on the project understand what you are working on.
+
+![screenshot 154](https://user-images.githubusercontent.com/37223446/47234964-240bc700-d3f5-11e8-9837-50685ad44382.png)
 
 ##### // git branch new-branch //
 
@@ -64,15 +70,25 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
 
-##### // git add -A //
+##### // git add -A // or // git add . //
+
+![screenshot 155](https://user-images.githubusercontent.com/37223446/47253493-417e7680-d471-11e8-83cf-a4f969da5131.png)
+
 
 ###### Next, we’ll want to record the changes that we made to the repository with the git commit command.
 
 ###### The commit message is an important aspect of your code contribution; it helps the other contributors fully understand the change you have made, why you made it, and how significant it is. Additionally, commit messages provide a historical record of the changes for the project at large, helping future contributors along the way.
 
+
+![screenshot 155](https://user-images.githubusercontent.com/37223446/47235390-87e2bf80-d3f6-11e8-81c0-e01b7463d038.png)
+
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
 ###### // Example: // 
-##### // git commit -m "Fixed documentation typos" //
+##### // git commit -m "Updated Readme.md" //
+
+
+![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)
+
 
 ###### At this point you can use the git push command to push the changes to the current branch of your forked repository:
 ###### // Example: //
@@ -89,6 +105,9 @@ git clone https://github.com/your-username/Hacktoberfest.git
 ###### Next, you’ll have to specify a new remote upstream repository for us to sync with the fork. This will be the original repository that you forked from. you’ll have to do this with the git remote add command.
 
 ##### // git remote add upstream https://github.com/acmbvp/Hacktoberfest.git //
+
+
+![screenshot 74](https://user-images.githubusercontent.com/37223446/47235672-5f0efa00-d3f7-11e8-9e45-1af02d8b969b.png)
 
 ###### In this example, // upstream // is the shortname we have supplied for the remote repository since in terms of Git, “upstream” refers to the repository that you cloned from. If you want to add a remote pointer to the repository of a collaborator, you may want to provide that collaborator’s username or a shortened nickname for the shortname.
 
@@ -113,4 +132,4 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### You should navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
 
-# Hurray!! You just got close to complete your hacktoberfest challenge.
+# Hurray!! You just got closer to complete your hacktoberfest challenge.
