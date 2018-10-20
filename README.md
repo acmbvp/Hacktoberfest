@@ -22,7 +22,11 @@ https://github.com/acmbvp/Hacktoberfest/
 
 ![screenshot-fork](https://user-images.githubusercontent.com/37223446/47229495-77761900-d3e5-11e8-9de0-1891f5f7b245.png)
 
+<<<<<<< HEAD
 ###### When you’re on the main page for the repository, you’ll see a button to "Star" and “Fork” the repository on your upper right-hand side of the page, underneath your user icon.
+=======
+###### When you’re on the main page for the repository, you’ll see a “Fork” button on your upper right-hand side of the page, underneath your user icon.
+>>>>>>> c310ccdfb4c719fba2b1f5426c63b9fef2825cad
 
 ### 3. Clone the Repository
 
