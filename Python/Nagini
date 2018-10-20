@@ -7,4 +7,43 @@ A little girl goes into a pet show and asks for a wabbit. The shop keeper looks 
 —Nick Leaton, Wed, 04 Dec 1996
 
 This joke is bad. Lets do the code. 
-#changes are made
+
+#codechef smackdown_2
+
+import math
+t=int(input())
+for i in range(t):
+    n=int(input())
+    prime=[]
+    semi_prime=[]
+    var=0
+    for i in range(2,n+1):
+        c=0
+        for j in range(2,int(math.pow(i,0.5))+1):
+            if i%j==0:
+                c=1
+                break
+        if c==0:
+            prime.append(i)
+    print(prime)
+    for i in range(len(prime)):
+        for j in range(i+1,len(prime)):
+            if prime[i]*prime[j]<=200:
+                semi_prime.append(prime[i]*prime[j])
+    print(semi_prime)
+    for i in range(len(semi_prime)):
+        for j in range(len(semi_prime)):
+            if semi_prime[i]+semi_prime[j]==n:
+               var=1
+  
+    if var==0:
+        print("NO")
+    if var==1:
+        print("YES")
+          
+            
+    
+    
+                
+
+        
