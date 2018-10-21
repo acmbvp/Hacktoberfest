@@ -20,9 +20,9 @@ public class SpyNumber {
                 input = input / 10;
             }
             if (sum == product) {
-                ps.println("It's a SpyNumber.");
+                System.out.println("It's a SpyNumber.");
             } else {
-                ps.println("It's not a SpyNumber.");
+                System.out.println("It's not a SpyNumber.");
             }
         } catch (InputMismatchException ime) {
             System.out.println("You have entered Invalid Input.");
