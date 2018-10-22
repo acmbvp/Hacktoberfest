@@ -1,13 +1,19 @@
-import java.lang.reflect.*;
 
 /* 
-Creating own javap tool--
+LANGUAGE: Java
+ENV: JDK-10
+AUTHOR: sarvottam kumar
+GITHUB: https://github.com/sarru1291
+DESCRIPTION: Creating own javap tool--
 this tool disassembles a class file to displays metadata or information about the fields,constructors 
 and methods present in a class file.
 How to run after compiling code: 
         > java myjavap <class-name>
  e.g.   > java myjavap java.lang.String
-        > java myjavap java.util.Scanner */
+        > java myjavap java.util.Scanner 
+*/
+
+import java.lang.reflect.*;
 
 public class myjavap {
     public static void main(String... input) {

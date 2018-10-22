@@ -1,8 +1,15 @@
+
+/* 
+LANGUAGE: Java
+ENV: JDK-10
+AUTHOR: sarvottam kumar
+GITHUB: https://github.com/sarru1291
+DESCRIPTION: A number is said to be a Spy number if the sum of all the digits is equal to the product of all digits.
+ 	        e.g. Input : 123
+             sum=(1+2+3)=6==product=(1*2*3)=6 It's a spy number. 
+*/
 import java.util.InputMismatchException;
 import java.util.Scanner;
-/* 	A number is said to be a Spy number if the sum of all the digits is equal to the product of all digits.
- 	e.g. Input : 123
- 			sum=(1+2+3)=6==product=(1*2*3)=6 It's a spy number. */
 
 public class SpyNumber {
     public static void main(String... arg) {
