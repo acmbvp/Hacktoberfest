@@ -15,13 +15,16 @@ public class Client {
         String receivingMessage = "";
         sendToConsole.print("          Press CTRL+C to exit !!!\n\n");
 
-        while (true) {
-            sendToConsole.print("Client>> ");
-            sendingMessage = readFromKeyboard.nextLine();
-            sendToSocket.println(sendingMessage);
-            receivingMessage = readFromSocket.nextLine();
-            sendToConsole.println("Server>> " + receivingMessage);
-        }
-        
-    }
+        try {
+            while (true) {
+                        sendToConsole.print("Client>> ");
+                        sendingMessage = readFromKeyboard.nextLine();
+                        sendToSocket.println(sendingMessage);
+                        receivingMessage = readFromSocket.nextLine();
+                        sendToConsole.println("Server>> " + receivingMessage);
+                    }
+                } catch (RuntimeException NoSuchElementException) {
+                    sendToConsole.println("\n          Connection Disconnected!!!");
+                }
+    
 }

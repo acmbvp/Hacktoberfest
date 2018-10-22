@@ -17,13 +17,17 @@ public class Server {
         String receivingMessage = "";
         sendToConsole.print("          Press CTRL+C to exit !!!\n\n");
        
-        while (true) {
+        try {
+            while (true) {
                 receivingMessage = readFromSocket.nextLine();
                 sendToConsole.println("Client>> " + receivingMessage);
                 sendToConsole.print("Server>> ");
                 sendingMessage = readFromKeyboard.nextLine();
                 sendToSocket.println(sendingMessage);
             }
+        } catch (Exception NoSuchElementException) {
+            sendToConsole.println("\n         Connection Disconnected!!!");
+        }
         
     }
 }
