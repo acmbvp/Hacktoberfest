@@ -57,12 +57,12 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
 
-##### // git checkout new-branch //
+##### ` git checkout new-branch `
 
 ###### Once you enter the git checkout command, you will receive the following output:
 
-###### // Output: //
-##### // Switched to branch 'new-branch' //
+###### ` Output: `
+##### ` Switched to branch 'new-branch' `
  
 ###### At this point, you can now modify existing files or add new files to the project on your own branch.
 
@@ -70,7 +70,7 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
 
-##### // git add -A // or // git add . //
+##### ` git add -A ` or ` git add . `
 
 ![screenshot 155](https://user-images.githubusercontent.com/37223446/47253493-417e7680-d471-11e8-83cf-a4f969da5131.png)
 
@@ -83,16 +83,16 @@ git clone https://github.com/your-username/Hacktoberfest.git
 ![screenshot 155](https://user-images.githubusercontent.com/37223446/47235390-87e2bf80-d3f6-11e8-81c0-e01b7463d038.png)
 
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
-###### // Example: // 
-##### // git commit -m "Updated Readme.md" //
+###### ` Example: ` 
+##### ` git commit -m "Updated Readme.md" `
 
 
 ![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)
 
 
 ###### At this point you can use the git push command to push the changes to the current branch of your forked repository:
-###### // Example: //
-##### // git push --set-upstream origin new-branch //
+###### ` Example:`
+##### ` git push --set-upstream origin new-branch `
 
 ### 5. Update Local Repository
 
@@ -104,7 +104,7 @@ git clone https://github.com/your-username/Hacktoberfest.git
 
 ###### Next, you’ll have to specify a new remote upstream repository for us to sync with the fork. This will be the original repository that you forked from. you’ll have to do this with the git remote add command.
 
-##### // git remote add upstream https://github.com/acmbvp/Hacktoberfest.git //
+##### ` git remote add upstream https://github.com/acmbvp/Hacktoberfest.git `
 
 
 ![screenshot 74](https://user-images.githubusercontent.com/37223446/47235672-5f0efa00-d3f7-11e8-9e45-1af02d8b969b.png)
@@ -116,15 +116,15 @@ git clone https://github.com/your-username/Hacktoberfest.git
 ###### Once you have configured a remote that references the upstream and original repository on GitHub, you are ready to sync your fork of the repository to keep it up-to-date.
 ###### To sync your fork, from the directory of your local repository in a terminal window, you’ll have to use the // git fetch // command to fetch the branches along with their respective commits from the upstream repository. Since you used the shortname “upstream” to refer to the upstream repository, you’ll have to pass that to the command:
 
-##### // git fetch upstream //
+##### ` git fetch upstream `
 
 ###### Switch to the local master branch of our repository:
 
-##### // git checkout master //
+##### ` git checkout master `
 
 ###### You’ll now have to merge any changes that were made in the original repository’s master branch, that you will access through your local upstream/master branch, with your local master branch:
 
-##### // git merge upstream/master //
+##### ` git merge upstream/master `
 
 ### 8. Create Pull Request
 
