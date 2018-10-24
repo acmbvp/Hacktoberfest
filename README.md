@@ -61,10 +61,9 @@ https://github.com/your-username/Hacktoberfest.git
 
 ###### Once you enter the git checkout command, you will receive the following output:
 
-```
-######  Output: 
-#####  Switched to branch 'new-branch' 
-```
+######  `Output:` 
+#####  `Switched to branch 'new-branch' `
+
  
 ###### At this point, you can now modify existing files or add new files to the project on your own branch.
 
@@ -85,10 +84,9 @@ https://github.com/your-username/Hacktoberfest.git
 ![screenshot 155](https://user-images.githubusercontent.com/37223446/47235390-87e2bf80-d3f6-11e8-81c0-e01b7463d038.png)
 
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
-```
-######  Example:  
-#####  git commit -m "Updated Readme.md" 
-```
+
+###### ` Example: ` 
+##### ` git commit -m "Updated Readme.md" `
 
 ![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)
 
