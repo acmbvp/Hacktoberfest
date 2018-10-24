@@ -2,7 +2,7 @@
 
 ### Academics
 
-Your School
+Your University/Institute
 
 ### Interests
 
