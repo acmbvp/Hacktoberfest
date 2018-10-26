@@ -97,7 +97,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 ### 5. Update Local Repository
 
-###### While you are working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will cause conflicts. To keep your local copy of the code base updated, you’ll need to sync changes.
+###### While working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will cause conflicts. To keep your local copy of the code base updated, you’ll need to sync changes.
 
 ###### We’ll first go over configuring a remote for the fork, then syncing the fork.
 
@@ -123,7 +123,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 ##### ` git checkout master `
 
-###### You’ll now have to merge any changes that were made in the original repository’s master branch, that you will access through your local upstream/master branch, with your local master branch:
+###### Now merge any changes that were made in the original repository’s master branch, that you will access through your local upstream/master branch, with your local master branch:
 
 ##### ` git merge upstream/master `
 
@@ -131,6 +131,6 @@ https://github.com/your-username/Hacktoberfest.git
 
 ###### At this point, you are ready to make a pull request to the original repository.
 
-###### You should navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
+###### Now navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
 
-# Hurray!! You just got closer to complete your hacktoberfest challenge.
+# Hurray! You just got closer to completing your hacktoberfest challenge.
