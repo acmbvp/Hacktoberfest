@@ -59,7 +59,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 ##### ` git checkout new-branch `
 
-###### Once you enter the git checkout command, you will receive the following output:
+###### Once you enter the git `checkout` command, you will receive the following output:
 
 ######  `Output:` 
 #####  `Switched to branch 'new-branch' `
