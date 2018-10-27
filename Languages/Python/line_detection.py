@@ -23,7 +23,6 @@ def main():
         
         ret, frame = cap.read()
         grey = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        
         canny = cv2.Canny(grey, 100, 200, L2gradient = True)
         
         lines = cv2.HoughLines(canny, 1, np.pi/180, 50)
