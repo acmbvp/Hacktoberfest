@@ -13,7 +13,7 @@
 ### 2. Star and Fork this Repository
 ###### You can star and fork this repository on GitHub by navigating at the top of this repository.
 
-###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
+###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the Hacktoberfest repository, so the GitHub URL for this project is: 
 
 https://github.com/acmbvp/Hacktoberfest/
 
@@ -133,6 +133,6 @@ https://github.com/your-username/Hacktoberfest.git
 
 ###### Now navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
 
-# Hurray! You just got closer to completing your hacktoberfest challenge.
+# Hurray! You just got closer to completing your Hacktoberfest challenge.
 
 > ACM-BVP &copy; 2018
