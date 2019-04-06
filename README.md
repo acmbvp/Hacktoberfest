@@ -135,4 +135,4 @@ https://github.com/your-username/Hacktoberfest.git
 
 # Hurray! You just got closer to completing your Hacktoberfest challenge.
 
-> &copy ACM BVP 2018
+> ©ACM-BVP 2018
