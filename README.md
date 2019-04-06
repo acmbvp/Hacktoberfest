@@ -1,6 +1,6 @@
 # Hacktoberfest
 
-# Instructions :
+# Instructions:
 
 
 ### 1. Register yourself for Hacktoberfest
@@ -22,7 +22,7 @@ https://github.com/acmbvp/Hacktoberfest/
 
 ![screenshot-fork](https://user-images.githubusercontent.com/37223446/47229495-77761900-d3e5-11e8-9de0-1891f5f7b245.png)
 
-###### When you’re on the main page for the repository, you’ll see a button to "Star" and “Fork” the repository on your upper right-hand side of the page, underneath your user icon.
+###### When you’re on the main page of a repository, you’ll see a button to "Star" and “Fork” the repository on the upper right-hand side of the page, underneath your user icon.
 
 ### 3. Clone the Repository
 
@@ -135,4 +135,4 @@ https://github.com/your-username/Hacktoberfest.git
 
 # Hurray! You just got closer to completing your Hacktoberfest challenge.
 
-> ACM-BVP &copy; 2018
+> &copy ACM BVP 2018
