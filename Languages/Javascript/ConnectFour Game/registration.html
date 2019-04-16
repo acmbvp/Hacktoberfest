@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="connect4.css">
+<title>Connect Four Game</title>
+</head>
+<body>
+
+
+
+<!-------------------------------------Logo-------------------------------------->
+
+
+
+<div id="logo">
+<img src="logo1.png" alt="Connectfour">
+</div>
+
+
+
+
+<!----------------------------------Heading--------------------------------------->
+
+
+
+
+<div id="heading">Connect Four Game
+</div>
+
+
+<div id="container">
+
+
+
+
+<!---------------------------------Navigation---------------------------------->
+
+
+
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+    <li class="selected"><a href="#register">Registration</a></li>
+    <li><a href="game.html">Game</a></li>
+    <li><a href="ranking.html">Ranking</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<!------------------------------------Register and Login----------------------------------->
+
+<div class="formcontainer">
+
+ <!--Registration form -->
+    <div>
+        <h1>Registration</h1>
+        <input type="text" name="username" value="Username" id="name">
+        <input type="password" name="password" id="password">
+        <button onclick="registerUser()">Submit</button>
+    </div> 
+
+    <!-- Login form -->
+    <div>
+        <h1>Login</h1>
+        <input type="text" name="username" value="Username" id="loginName">
+        <input type="password" name="password" id="loginPassword">
+        <button onclick="checkLogin()">Submit</button>
+        <p id="LoginResult">Not logged in.</p>
+    </div> 
+
+    <!-- Rankings table will be inserted here -->
+    <div id="RankingsTable"></div>
+</div>
+
+ <!------------------------------------Java script for Register and Login----------------------------------->   
+    <script type="text/javascript" src ="registration.js"></script>
+	
+
+</body>
+</html>
