@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- Page title -->
+        <title>Welcome to DoGGBall - Login/Register</title>
+        <!-- Meta tag that specifies character set that this website written with -->
+        <meta charset="UTF-8"> 
+        <!-- Linking CSS page to this page -->
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    
+    <body onload="checkLogin()"> 
+        <!-- logo -->
+        <img id="logo" src="images/logo.png" alt="logo">
+        
+        <!-- Navigation bar -->
+            <ul class="nav">
+                <li><a href="home.html">HOME</a></li>
+                <!-- Class here is used for hover to stay when user is on login/register page -->
+                <li><a class="current" href="loginregister.html">LOGIN/REGISTER</a></li>
+                <li><a href="scoreboard.html">SCOREBOARD</a></li>
+            </ul>
+        
+        <!-- Login and registration form -->
+        <div id="loginregister">
+            <h1>Registration</h1>
+            <form id="usrDetails" onsubmit = "return false">
+                USERNAME:
+                <!-- textbox input -->
+                <input type="text" id="registername"> 
+                <br><br>
+                PASSWORD:
+                <!-- textbox input -->
+                <input type="text" id="registerpassword"> 
+                <br><br>
+                EMAIL:
+                <!-- textbox input -->
+                <input type="text" id="registeremail">
+                <!-- registration button -->
+                <input type= "submit" onclick="registerUser()">
+            </form>
+            <p id="result"></p>
+            
+            <div id = "loginPara">
+            <h1>Login</h1>
+            <form id="usrDetails" onsubmit = "return false">
+               <br>
+                EMAIL:
+                <!-- textbox input -->
+                <input type="text" id="registeremail"> 
+                <br><br>
+                PASSWORD:
+                <!-- textbox input -->
+                <input type="text" id="registerpassword"> 
+                <br><br>
+                <!-- login button -->
+                 <input type= "submit" onclick="login()"> 
+           </form>
+            </div>
+            <p id="loginFailure"style = "color:red;"></p>
+            
+        <script>
+        
+        // Does some basic checking of user data then stores user data in localStorage
+        function registerUser(){
+            
+            var usrObject = {};
+
+            //Extract the name and password that the user has entered
+            usrObject.registername = document.getElementById("registername").value;
+            usrObject.registerpassword = document.getElementById("registerpassword").value;
+            usrObject.registeremail = document.getElementById("registeremail").value;
+            
+            localStorage[usrObject.registeremail] = JSON.stringify(usrObject);
+            
+            document.getElementById("result").innerHTML = "<b>Registration Successful</b>";
+            
+        }
+            
+        function checkLogin(){ //extract details of logged in user
+            if(localStorage.loggedInUsrEmail !-- undefined){
+                var usrObj = JSON.parse(localStorage[localStorage.loggedinUsrEmail]);
+                document.getElementById("loginPara").innerHTML = usrObj.registername + "logged in."; //greet logged in user
+            }
+            
+        }
+        
+        function login(){
+            var email = document.getElementById("registeremail").value; //get email address
+            
+            if(localStorage[email] === undefined) { //users that dont have account
+                document.getElementById("loginFailure").innerHTML = "Email not recognised. Do you have an account?"; //inform failure to user
+                return;
+            }
+            else{
+                var usrObj = JSON.parse(localStorage[email]); //convert to object
+                var password = document.getElementById("registerpassword").value;
+                if (password === usrObj.registerpassword){ //successful login
+                    document.getElementById("loginPara").innerHTML = usrObj.registername + "logged in.";
+                    document.getElementById("loginFailure").innerHTML = ""; // clear login failures
+                    localStorage.loggedInUsrEmail = usrObj.registeremail;
+                }   
+                else {
+                    document.getElementById("loginFailure").innerHTML = "Password not correct. Please try again";
+                }
+            }
+        }
+    </script>    
+           
+        </div>
+        
+        <!-- Footer -->
+        <div id="footer">
+            <footer>
+                <!-- Users can e-mail to designer directly by link -->
+                <p>Copyright - Umut Ekerdiker <br>2017<br>E-mail me <a href="mailto:ue036@live.mdx.ac.uk"> here!</a></p> 
+            </footer>
+        </div>
+        
+    </body>
+    
+</html>
