@@ -1,0 +1,99 @@
+/*---------------body-----------------*/
+body {
+  background-image:url(images/background.jpg);/* background image*/
+  background-size: cover; /* makes background image fill any size of screen */
+}
+
+/*---------------logo-----------------*/
+#logo {
+    /* centralizing and sizing the logo*/
+    display:block; 
+    margin:auto;
+    width: 600px;
+}
+
+/* @font-face is used to add a custom font that is not installed on the browser, snapITC font can be used in any element after adding this piece of code.*/
+@font-face {
+    font-family: "snapitcfont";
+    src: url("images/snapitc.ttf");
+}
+
+/*---------------navigation bar-----------------*/
+.nav {
+    font-family: snapitcfont; /*after adding @font-face rule, snapITC font is available to use in navigation bar*/
+    font-size:30px;
+    list-style: none;
+    text-align:center;
+}
+
+/*---------------navigation bar list horizontal listing and padding-----------------*/
+.nav > li {
+    display:inline-block;
+    padding-right: 50px;
+}
+
+/*---------------getting rid of underline and styling the text-----------------*/
+.nav > li > a {
+    text-decoration:none;
+    color:black;
+}
+
+/*---------------navigation bar text hover colour-----------------*/
+.nav > li > a:hover {
+    color:darkgreen;
+}
+
+/*---------------hover colour to stay when user is on the current page-----------------*/
+.nav .current {
+    color:darkgreen;
+}
+
+
+/*---------------game-----------------*/
+#game{
+    display: flex;
+    align-content: center;
+}
+
+/*---------------footer-----------------*/
+#footer{
+    text-align: center;
+    font-family:"Times New Roman", Georgia, Serif;
+    font-size:17px;
+    font-weight:bold;
+}
+
+/*---------------login and registration form on login/register page-----------------*/
+#loginregister{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-family: snapitcfont;
+    font-size:30px;
+    float:center;
+    width:35%;
+    border-style: inset;
+    border-width: 5px;
+    border-color: darkgreen;
+    padding-bottom: 25px;
+}
+
+/*---------------scoreboard on scoreboard page-----------------*/
+#scoreboard{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    font-family: snapitcfont;
+    font-size:30px;
+    padding-top:45px;
+    padding-bottom: 50px;
+}
+
+/* padding between cells and border settings of scoreboard on scoreboard page*/
+td,th{
+    padding:15px;
+    border-style: inset;
+    border-width: 5px;
+    border-color: darkgreen;
+}

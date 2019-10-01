@@ -1,0 +1,10 @@
+td
+{
+	background-color: green;
+	color:black;
+	border:black 1px solid;
+	width: 20px;
+	height:20px;
+	font-size:18px;
+	padding: 7px; 
+}

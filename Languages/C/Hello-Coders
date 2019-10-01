@@ -1,0 +1,11 @@
+#Hello Coders of C/C++ language.
+/*
+int PR=0;
+while(1)
+{  
+  if(commit=="successfull")
+    PR++;
+if(PR==5)
+printf("Congo! U get a T-shirt")
+}
+*/

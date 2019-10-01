@@ -1,0 +1,255 @@
+/*Body*/
+
+
+
+body {
+    background-image:url(bg1.gif);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+/*Header section*/
+#logo {
+	
+	background-repeat:no-repeat;
+	
+}
+#heading
+{	
+	font-family: Papyrus, fantasy;
+	font-size: 80px;
+	text-align: center;
+	color:white;
+	height:140px;
+    display:block;
+	
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/*Text */
+
+#intro{
+    display:inline;
+	font-family: "Times New Roman", Times, serif; 
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	color:white;
+	text-align:center;
+	height:326px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* Navigation section*/
+#container{
+	width:250px;
+}
+#nav{
+	width:250px;
+	height:400px;
+    display:inline;
+	float:left;
+}
+ a{
+text-decoration:none;
+color:white;
+padding:20px;
+padding-right:100px;
+font-size:25px;
+
+}
+ ul li{
+	list-style-type:none;
+	display:block;
+	padding: 15px
+	
+	
+}
+
+/* Hover effect for navigation */
+
+
+ ul li:hover{
+	background:#4097AD;
+	transition:linear all 0.40s;
+	margin-left:10px;
+	
+}
+ ul li a:hover{
+	color:black;
+}
+
+
+
+/* Shows what page you are on */
+
+
+.selected{
+background:white;
+	
+}
+.selected a{
+	color:black;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* Form section*/
+
+
+
+
+h1{
+	color: white;
+	text-align:center;
+	display:block;
+	position:absolute-center;
+	float:center;
+}
+
+
+p{
+	color:white;
+	text-align:center;
+	display:inline-block;
+	position:fixed-center;
+	float:right;
+	
+}
+/* Inputs */
+
+
+input[type=text], input[type=password] 
+{
+    width: 25%;
+    padding: 12px 50px;
+    margin: 10px auto;
+	display:block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	text-align:center;
+	position:fixed-center;
+
+}
+
+
+/*  Button */
+
+
+button {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+	display:block;
+	border-radius:90%;
+	position:fixed-center;
+}
+
+/* Hover effect for button */
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* padding for formcontainer */
+.formcontainer {
+    padding: 26px;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+		
+		
+/* -------------------------------------------------------------------------------- */
+
+/* table */
+
+th
+{
+	padding:0 30px 0 10px;
+	color:white;
+	font-size:35px;
+	width: 25%;
+    margin: 10px auto;
+	border-style:double;
+	border-width: 15px;
+	border-color:red;
+}
+
+td
+{
+    padding:0 30px 0 10px;
+	color:white;
+	font-size:35px;
+	width: 25%;
+    margin: 10px auto;
+	text-align: center;
+	border-style:inset;
+	border-width: 5px;
+	
+}
+
+
+* -------------------------------------------------------------------------------- */
+
+/* Game */
+
+
+#game-base{
+  width:640px;  
+  margin:0 auto;
+  padding-top:60px;
+}
+
+#game-table{
+  width:434px;
+  height:374px;
+  margin:0 auto;
+  border-style:double;
+  border-width: 15px;
+  border-color:red;
+  position:relative;
+  border-radius:10px;
+  display:block;
+}
+
+
+
+.disc{
+  position:absolute;
+  z-index:-1;
+  top:-55px;
+  left:14px;
+  width:46px;
+  height:46px;
+  border-radius:46px;
+  transition:all .3s;
+}
+
+.disc.red{
+  background:red;
+}
+
+.disc.yellow{
+  background:yellow;
+}
