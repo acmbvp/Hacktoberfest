@@ -1,0 +1,27 @@
+* {
+  display: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+
+#Display {
+  width: 80%;
+  margin: auto;
+  background-color: darkgrey;
+}
+
+.Container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+input, button {
+  margin-bottom: 5px;
+}
