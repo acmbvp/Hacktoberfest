@@ -4,9 +4,9 @@
 
 
 ### 1. Register yourself for Hacktoberfest
-###### Link to register: https://hacktoberfest.digitalocean.com/sign_up/register
+###### Link to register: https://hacktoberfest.digitalocean.com/
 
-![screenshot 147](https://user-images.githubusercontent.com/37223446/47229289-00d91b80-d3e5-11e8-8f6e-5be4ad9da7b2.png)
+![Screenshot-HFST](https://user-images.githubusercontent.com/22788214/66115214-0166c400-e5ee-11e9-9659-1ef73e30e2b5.png)
 
 
 
