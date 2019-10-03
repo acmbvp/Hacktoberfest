@@ -1,10 +1,11 @@
 # Hacktoberfest
 
-# Instructions:
+## Instructions:
 
 
 ### 1. Register yourself for Hacktoberfest
 ###### Link to register: https://hacktoberfest.digitalocean.com/
+Click on "Start Hacking" and add your GitHub account.
 
 ![Screenshot-HFST](https://user-images.githubusercontent.com/22788214/66115214-0166c400-e5ee-11e9-9659-1ef73e30e2b5.png)
 
@@ -135,4 +136,4 @@ https://github.com/your-username/Hacktoberfest.git
 
 # Hurray! You just got closer to completing your Hacktoberfest challenge.
 
-> ©ACM-BVP 2018
+> ©ACM-BVP 2019
