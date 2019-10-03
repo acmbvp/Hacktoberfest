@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        var inputNumber = prompt("please input a number", "");
+        var hours, min, sec;
+        hours = inputNumber / 3600;
+        inputNumber = inputNumber % 3600;
+        min = inputNumber / 60;
+        sec = inputNumber % 60;
+        console.log("Hours=" + hours + "Minutes=" + min + "sec=" + sec);
+        //alert("Hours=" + hours + "Minutes=" + min + "sec=" + sec);
+        //document.getElementById("demo").innerHTML = "Hours=" + hours + "Minutes=" + min + "sec=" + sec;
+    </script>
+
+</body>
+
+</html>
