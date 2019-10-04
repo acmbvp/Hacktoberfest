@@ -1,6 +1,6 @@
 #Sandeep sharma
-*Hello*
-~Everyone~
+*Hello  everyone*
+
 
 **Sandeep sharma Here**
 
