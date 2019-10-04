@@ -6,7 +6,7 @@ _BVCOE_
 
 ### Interests
 
-Gaming,reading
+***Gaming**,reading*
 
 ### Profile Link
 
