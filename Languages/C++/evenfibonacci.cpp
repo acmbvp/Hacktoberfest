@@ -5,7 +5,7 @@ void main()
 {
 int a,b,c,i,n,x[100],sum=0;
 clrscr();
-cout<<"Enter the number n"<<endl;
+cout<<"Enter the number"<<endl;
 cin>>n;
 a=0;
 b=1;
