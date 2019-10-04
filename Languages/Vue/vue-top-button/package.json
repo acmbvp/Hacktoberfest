@@ -1,0 +1,63 @@
+{
+  "name": "@tanahatas/vue-top-button",
+  "version": "1.0.6",
+  "description": "Scroll to page top button, Vue.js component.",
+  "main": "dist/vue-go-top.umd.js",
+  "cdn": "dist/vue-go-top.min.js",
+  "config": {
+    "dist_dir": "dist",
+    "src_dir": "src"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
+    "prebuild": "rimraf $npm_package_config_dist_dir/vue-go-top.* && npm run clean && npm test",
+    "build": "NODE_ENV=production webpack -p --config config/webpack.prod.js",
+    "clean": "rimraf '**/.DS_Store'",
+    "lint": "eslint $npm_package_config_src_dir",
+    "prettier": "prettier --write 'src/**/*.js'",
+    "test": "npm run lint"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanahatas/vue-top-button.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Ahmad Ainul Rizki (https://tanahatas.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanahatas/vue-top-button/issues"
+  },
+  "homepage": "https://github.com/tanahatas/vue-top-button#readme",
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
+    "autoprefixer": "9.3.1",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.4",
+    "css-loader": "1.0.0",
+    "eslint": "5.7.0",
+    "eslint-plugin-vue": "4.7.1",
+    "node-sass": "4.9.4",
+    "postcss-loader": "3.0.0",
+    "prettier": "1.14.3",
+    "rimraf": "2.6.2",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "vue": "2.5.17",
+    "vue-loader": "15.4.2",
+    "vue-template-compiler": "2.5.17",
+    "webpack": "4.23.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "4.1.4"
+  },
+  "dependencies": {
+    "sweet-scroll": "3.0.1",
+    "throttle-debounce": "2.0.1"
+  }
+}
