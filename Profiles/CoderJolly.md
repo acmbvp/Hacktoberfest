@@ -8,7 +8,7 @@
 ### Interests
 
 - Cycling
-- Watching Hollywood Movies 
+- Watching Hollywood Movies
 
 ### Development
 
@@ -21,4 +21,4 @@
 ### Profile Link
 
 - [Harman Jolly](https://Coderjolly.github.io)
- ProTip! Use 
+ ProTip! Use
