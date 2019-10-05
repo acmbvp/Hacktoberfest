@@ -1,0 +1,16 @@
+{
+  "completions": {
+    "includeKeywords": true
+  },
+  "libs": [
+    "mydef",
+    "browser",
+    "ecmascript",
+    "chai"
+  ],
+  "plugins": {
+    "doc_comment": {},
+    "complete_strings": {},
+    "es_modules": {}
+  }
+}
