@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Paint a vector</title>
+</head>
+<body>
+  <div class="Container">
+    <canvas id="Display"></canvas>
+  </div>
+  <br />
+  <div class="Container">
+    Start: <input type="text" placeholder="(0, 0)" value="(0, 0)" id="Start">
+    Vector: <input type="text" placeholder="(9, 20)" value="(9, 20)" id="Vector">
+    <button id="Paint">Paint</button>
+    <p style="display: none" id="Length">magnitude: 0</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
