@@ -1,0 +1,11 @@
+body{background-color:yellow;
+     font-family:courier;
+     font-size:200%;}
+h1{ color:green;
+    font-size:20px;}
+p{ color:orange;
+   font-size:150%;
+   border:1px solid black;
+   padding: 20px;
+   margin: 50px;
+}
