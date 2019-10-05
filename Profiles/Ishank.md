@@ -2,6 +2,4 @@
 ### acedemics
 * project
 ** innovation
-*** new program
-# new Entry
-**** abcd 
+

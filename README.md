@@ -14,7 +14,7 @@ Click on "Start Hacking" and add your GitHub account.
 ### 2. Star and Fork this Repository
 ###### You can star and fork this repository on GitHub by navigating at the top of this repository.
 
-###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the Hacktoberfest repository, so the GitHub URL for this project is: 
+###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, acmbvp is the owner of the Hacktoberfest repository, so the GitHub URL for this project is:
 
 https://github.com/acmbvp/Hacktoberfest/
 
@@ -46,7 +46,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 ### 4. Create a New Branch
 
-###### To create your branch, from your terminal window, change your directory so that you are working in the directory of the repository. Be sure to use the actual name of the repository (i.e. Hacktoberfest) to change into that directory.
+###### To create your branch, from your terminal window, change your directory so that you are working in the directory of the repository. Be sure to use the actual name of the repository (i.e. Hacktoberfest) to switch into that directory.
 
 #####    ` cd Hacktoberfest`
 
@@ -62,13 +62,13 @@ https://github.com/your-username/Hacktoberfest.git
 
 ###### Once you enter the git `checkout` command, you will receive the following output:
 
-######  `Output:` 
+######  `Output:`
 #####  `Switched to branch 'new-branch' `
 
- 
+
 ###### At this point, you can now modify existing files or add new files to the project on your own branch.
 
-#### Make Changes Locally 
+#### Make Changes Locally
 
 ###### Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the git add command. Let’s add the -A flag to add all changes that we have made:
 
@@ -86,7 +86,7 @@ https://github.com/your-username/Hacktoberfest.git
 
 ###### If you have a very short message, you can record that with the -m flag and the message in quotes:
 
-###### ` Example: ` 
+###### ` Example: `
 ##### ` git commit -m "Updated Readme.md" `
 
 ![screenshot 156](https://user-images.githubusercontent.com/37223446/47235961-3fc49c80-d3f8-11e8-906f-a1cfa7a15726.png)

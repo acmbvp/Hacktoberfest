@@ -1,0 +1,14 @@
+{
+  "name": "IzDog",
+  "version": "1.0.0",
+  "description": "Is that actually a dog breed?",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "izdog": "node index.js"
+  },
+  "dependencies": {
+    "cross-fetch": "3.0.4"
+  }
+}
