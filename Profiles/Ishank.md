@@ -3,7 +3,3 @@
 * project
 ** innovation
 *** new program
-# new Entry
-## new designs
-#### new community
-
