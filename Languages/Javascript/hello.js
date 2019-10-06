@@ -3,6 +3,4 @@
 // Author: Tushar
 // Github: https://github.com/tchhuneja
 
-<script>
-	alert('Hello world');
-</script>
+console.log('Hello world');
