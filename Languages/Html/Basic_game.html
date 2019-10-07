@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+  #arena
+   {
+      
+       height:300px;
+       width:500px;
+       background-color: palegreen;
+     
+   }
+   #player
+   {
+       display:inline-block;       
+       height: 50px;
+       width:50px;
+       background-color: green;  
+     transform:translateY(100px);
+     animation: leftright 2s infinite ;
+     animation-play-state:paused;
+     
+   }
+   #arena:hover > #player
+   {
+     
+       animation-play-state: running;
+   }
+   .obs
+   { 
+       display:inline-block;
+       height: 50px;
+       width:50px;
+       background-color: brown;
+       margin-left: 150px;
+       animation: updown 2s infinite ease;
+       
+      
+   }
+   .obs2{
+       animation-duration: 3s;
+   }
+  
+   @keyframes updown
+{
+    50%
+    {
+        transform: translateY(250pX);
+        transition:10s; 
+    }
+}
+   
+   @keyframes leftright
+   {
+       50%
+       {
+           transform: translate(450px,100px);
+           transition: 15s;
+       }
+   }
+   
+   </style>
+</head>
+<body>
+   <div id="arena">
+    <div id="player"></div> 
+   <div class="obs"></div> 
+   <div class="obs obs2"></div> 
+   
+</div>
+</body>
+</html>
