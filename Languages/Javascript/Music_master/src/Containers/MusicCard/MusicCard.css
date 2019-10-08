@@ -1,0 +1,40 @@
+.MusicCard{
+    box-sizing: border-box;
+    width: 16vmax;
+    height: 16vmax;
+}
+
+.AlbumImage{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.AlbumName{
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 20%;
+    width: 90%;
+    color:white;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 0px;
+}
+
+.playPause{
+    display: block;
+    position: relative;
+    top: -70%;
+    color: white;
+    background-color: black;
+    width: 20%;
+    opacity: 0.5;
+    margin-left: 40%;
+}
+.playPause:hover{
+    cursor: pointer;
+}

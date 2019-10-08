@@ -1,0 +1,26 @@
+.SearchBar{
+    position: absolute;
+    top: 10%;
+    right: 153px;
+    width: 250px;
+    height: 40px
+}
+
+.SearchBar:focus{
+    width: 500px;
+    background-color: #f2f2f2;
+    font-size: larger
+}
+
+.SearchButton{
+    position: absolute;
+    top:10%;
+    right:0px;
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: larger;
+    font-family: Comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
