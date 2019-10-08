@@ -1,0 +1,18 @@
+import xlrd
+
+loc = ("enter the location/path of file")
+
+
+wb = xlrd.open_workbook(loc) #opens the workbook
+sheet = wb.sheet_by_index(0) #opens the specified sheet of workbook
+
+sheet.cell_value(0, 0) #(row,column)
+
+print(sheet.nrows) #prints number of rows
+
+print(sheet.ncols) #prints number of columns
+
+for i in range(sheet.ncols):
+    print(sheet.cell_value(0, i)) #prints all column names
+
+    
