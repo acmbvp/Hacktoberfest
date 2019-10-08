@@ -1,0 +1,13 @@
+import xlwt
+from xlwt import Workbook
+
+
+wb = Workbook() #the Workbook
+
+sheet1 = wb.add_sheet('Sheet 1')  #sheet created
+
+sheet1.write(1, 0, 'HACKTOBER') #to write in excel
+sheet1.write(2, 1, 'FEST') #(row, column,text)
+
+
+wb.save('YourExcel.xls') #to save the excel sheet
