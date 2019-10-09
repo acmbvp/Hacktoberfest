@@ -1,10 +1,13 @@
 JONES CYRIL
 
-Academics
+Academics:
+
 Karunya University
 
-Interests
+Interests:
+
 eating and reading
 
-Profile Link
+Profile Link:
+
 https://github.com/chocopiee
