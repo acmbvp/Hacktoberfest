@@ -1,2 +1,0 @@
-# Its new file
-** academics
