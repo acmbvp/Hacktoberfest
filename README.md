@@ -2,7 +2,7 @@
 
 ###### ⚠️ This repository is excluded from Hacktoberfest in favour of promoting quality open source contributions. So pull requests here won't contribute towards your Hacktoberfest progress.
 
-Note: The sole purpose of this repository is to help beginners learn Git & GitHub through easy first contribution, and we therefore are still welcoming pull requests here.
+###### Note: The sole purpose of this repository is to help beginners learn Git & GitHub through easy first contribution, and we therefore are still welcoming pull requests here.
 
 ## Instructions:
 
