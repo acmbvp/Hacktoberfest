@@ -1,17 +1,18 @@
 #include<iostream>
-#include<conio.h>
+#include<vector>
 using namespace std;
 
 int main()
 {   int n;
-	int a[5]; int ctr=0;
+	vector <int> a; int t,ctr=0;
 	cout<<"Enter the size of the array:";
 	cin>>n;
 	for(int i=0;i<n;i++)
 	{   cout<<"Enter the value:";
-		cin>>a[i];
+		cin>>t;
+      		a.push_back(t);
 	}
-		for(int i=0;i<n;i++)
+	for(int i=0;i<n;i++)
 	{   cout<<"Value are:"<<a[i]<<"\n";
 	
 	}
@@ -30,6 +31,5 @@ int i =1;
 	{
 		cout<<"Final Value are:"<<a[i]<<"\n";
 	}
-getch();
 return 0;
 }
