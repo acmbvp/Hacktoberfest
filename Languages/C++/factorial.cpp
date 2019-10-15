@@ -1,15 +1,19 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    unsigned int n;
-    unsigned long long factorial = 1;
-    cout << "Enter a positive integer: ";
-    cin >> n;
-    for(int i = 1; i <=n; ++i)
+unsigned long long fact(unsigned int n)
+{  unsigned long long factorial = 1;
+for(int i = 1; i <=n; ++i)
     {
         factorial *= i;
     }
-    cout << "Factorial of " << n << " = " << factorial;    
+return factorial;
+}
+int main()
+{
+    unsigned int n;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    unsigned long long  ans = fact(n);
+    cout << "Factorial of " << n << " = " << ans;    
     return 0;
 }
