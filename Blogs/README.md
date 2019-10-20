@@ -1,2 +1,3 @@
 ## Add your blogs in this directory!
-#### (preferably technical)
+
+* ![Whatever Blogger](https://whateverblogger.com)
