@@ -1,3 +1,4 @@
 Sherry Jain 
-IT Student , ADGITM
-    #Coding, Dancing , Singing
+IT Student , 2nd year, ADGITM
+    #Coding, Dancing , Singing and Basketball
+            
