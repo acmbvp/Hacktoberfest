@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+
+     <title>Kalkulator</title>
+     <style>
+         @font-face {
+             font-family: "Digital-7";
+             src: url("digital-7.ttf");
+
+         }
+     #koma {
+         padding-left: 10px;
+        padding-right: 10px;
+        margin-left: -1px;
+    }
+    #tambah {
+        margin-left: -1px;
+        padding-right: 7px;
+    }
+    #kali {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    #kurang {
+        padding-left: 9px;
+        padding-right: 8px;
+    }
+    #samadengan {
+        margin-left: -1px;
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+    input {
+        font-family: Digital-7;
+        text-align: right;
+        width: 155px;
+        height: 17px;
+        margin-left: -1px;
+        padding-right: 1px;
+
+    }
+    .papantombol {
+        background-color: azure;
+        display: inline-block;
+        padding: 20px 10 px 20px 10px;
+        border: 3px solid salmon;
+    }
+    .papanlcd {
+        display: inline-block;
+        width: 160px;
+        padding-left: 1px;
+        border: 3px solid lightskyblue;
+    }
+    .kalkulaktor{
+        border: 2px solid black ;
+        display: inline-block;
+    
+    }
+    .tombol7{
+        padding-left: 9px;
+    }
+    .atas {
+        padding-right: 1px;
+        display: inline;
+    }
+    #hapus {
+        height: 45px;
+        overflow-block: auto;
+        z-index: 2;
+        position: absolute;
+        margin-left: 3px;
+        width: 30px;
+
+    }
+    #tombol0{
+        width: 63px;
+    }
+     </style>
+
+</head>
+<body >
+<div class="kalkulaktor"     >
+    <div class="papanlcd">
+        <input name="screen" type="text" id=input value="0" />
+
+    </div>
+    <br>
+    <div class="papantombol">
+        <br>
+    <div class="atas">
+        <button id=tombol7 value="7" onclick="tampil(7)"> 7 </button>
+        <button id=tombol8 value="8" onclick="tampil(8)" > 8 </button>
+        <button onclick="tampil('9')" id=tombol9 value="9"> 9 </button>
+        <button  id=bagi onclick="bagi()"> / </button>
+        <button onclick="hapus_semua()" id=clear value="C"> C </button>
+    </div>
+        <br>
+
+        <button onclick="tampil(4)" id=tombol4 value="4"> 4 </button>
+        <button onclick="tampil(5)" id=tombol5 value="5"> 5 </button>
+        <button onclick="tampil(6)" id=tombol6 value="6"> 6 </button>
+        <button  id=kali value="*" onclick="kali()"> X </button>
+        <button onclick="hapus()" id=hapus value="Hapus"> &#8592; </button>
+
+        <br>
+        
+        <button onclick="tampil(1)" id=tombol1 value="1"> 1 </button>
+        <button onclick="tampil(2)" id=tombol2 value="2"> 2 </button>
+        <button onclick="tampil(3)" id=tombol3 value="3"> 3 </button>
+        <button  id=kurang value="-" onclick="kurang()"> - </button>
+        
+        <br>
+
+        <button onclick="tampil(0)" id=tombol0 value="0"> 0 </button>
+        <button onclick="koma()" id="koma"> , </button>
+        <button  id=tambah value="+" onclick="tambah()"> + </button>
+        <button id=samadengan value="=" onclick="hasil()"> = </button>
+
+
+</div>
+
+    <script>
+
+        function tampil(t){
+            var num = document.getElementById('input').value;
+            var nolkoma= "0.";
+            var nol = parseInt(nolkoma);
+
+            if (num == "0"){
+            document.getElementById('input').value =+t;
+            
+        }
+         else if (num == "0.") {
+            document.getElementById('input').value +=t;
+
+         
+         }
+         else {
+             document.getElementById('input').value +=t;
+             }
+        }
+
+
+        function bagi(){
+            var b='/';
+            document.getElementById('input').value +=b;
+
+        }
+        function kali(){
+            var b='*';
+            document.getElementById('input').value +=b;
+
+        }
+
+        function tambah(){
+            var b='+';
+            document.getElementById('input').value +=b;
+
+        }
+
+        function kurang(){
+            var b='-';
+            document.getElementById('input').value +=b;
+
+        }
+
+        function koma(){
+            var koma = '.';
+            var x = document.getElementById('input').value +=koma;
+           parseFloat(x);
+
+
+        }
+
+
+            function hapus_semua() {
+                document.getElementById('input').value =+ 0;
+            }
+
+            function hapus() {
+            var ambil = document.getElementById('input').value;
+
+               document.getElementById('input').value =+  ambil.substr(0, ambil.length-1);
+               
+            }
+
+
+function hasil(){
+
+const operasi = document.getElementById('input').value;
+var hasil = eval(operasi);
+document.getElementById('input').value =+hasil;
+}
+
+
+
+
+
+            </script>
+        
+</div>
+</body>
+</html>
