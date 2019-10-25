@@ -1,15 +1,18 @@
 # Maurizio Battaghini
 
-
 ### Interests
 
-- Swimming, Gaming and trash food
+- Swimming, gaming and trash food
 
 ### Development
 
 - Web engineer
 
+### Projects
+
+- [Readme generator](https://github.com/ibbatta/readme-generator) 📦📝 Personal generator to simply create cool and efficients README.md
+- [Frontend boilerplate](https://github.com/ibbatta/frontend-modern-boilerplate) 🏗🧱 Minimalist and powerful React + Webpack 4 boilerplate: pwa ready, with sass compiler and hot-reloading
 
 ### Profile Link
 
-- (https://github.com/ibbatta)
+[ibbatta](https://github.com/ibbatta)
