@@ -5,6 +5,7 @@
 
 const firstWord = 'Hello';
 const secondWord = 'World';
+const space = ' '
 
-const message = firstWord + secondWord;
+const message = ''.concat(firstWord,space,secondWord)
 console.log(message);
