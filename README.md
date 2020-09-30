@@ -137,6 +137,6 @@ At this point, you are ready to make a pull request to the original repository.
 
 Navigate to your forked repository, and press the “New pull request” button on your left-hand side of your Repo page.
 
-# Hurray! You just got closer to completing your Hacktoberfest challenge.
+# Hurray! You just got closer to completing your Hacktoberfest challenge...
 
 > ©ACM-BVP 2019
