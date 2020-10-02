@@ -1,0 +1,63 @@
+<!-- LANGUAGE: HTML/CSS/JS
+ENV: web
+AUTHOR: Arjun K Prasad
+GITHUB: https://github.com/arjun1237
+to run it: access the file thrugh chrome or live server would do -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display:grid;
+            place-items:center;
+            height:100vh;
+        }
+        #outer {
+            border:2px solid black;
+            height:400px;
+            width:400px;
+            background:yellow;
+            display:grid;
+            place-items:center;
+        }
+        #inner {
+            background:red;
+            height:50%;
+            width:50%;
+            display:grid;
+            place-items:center;
+        }
+        button {
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="outer">
+        <div id="inner">
+            <button id='btn'>click me</button>
+        </div>
+    </div>
+    <script>
+        var outer = document.getElementById('outer')
+        var inner = document.getElementById('inner')
+        var btn = document.getElementById('btn')
+
+        outer.addEventListener('click',function() {
+            alert("outer YELLOW div");
+        }, true)
+        inner.addEventListener('click',function() {
+            alert("inner RED div");
+        }, true)
+        btn.addEventListener('click',function() {
+            alert("button");
+        }, true)
+    </script>
+</body>
+</html>
