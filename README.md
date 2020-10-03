@@ -127,6 +127,10 @@ Switch to the local master branch of our repository:
 
 ##### ` git checkout master `
 
+Create and switch to the new branch
+
+#####  ` git checkout -b my-new-branch `
+
 Now merge any changes that were made in the original repository’s master branch, that you will access through your local upstream/master branch, with your local master branch:
 
 ##### ` git merge upstream/master `
