@@ -140,3 +140,5 @@ Navigate to your forked repository, and press the “New pull request” button 
 # Hurray! You just got closer to completing your Hacktoberfest challenge.
 
 > ©ACM-BVP 2019
+
+Please accept the PR
