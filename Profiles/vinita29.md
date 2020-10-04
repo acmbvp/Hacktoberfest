@@ -11,7 +11,7 @@ Gaikwad-Patil college of Engineering, Nagpur
 
 ### Development
 
-- html, css, js, Reactjs, React native, Wordpress
+- html, css, js, Reactjs, React native, Wordpress, Laravel
 
 
 ### Profile Link
