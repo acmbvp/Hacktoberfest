@@ -2,7 +2,7 @@
 
 ### Academics
 
-Gaikwad-Patil college of Engineering, Nagpur
+College name : Gaikwad-Patil college of Engineering, Butibori
 
 ### Interests
 - Web Development
