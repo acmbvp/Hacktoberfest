@@ -10,7 +10,7 @@ public class JavaExample {
         System.out.print("Enter second number:");
         num2 = scanner.nextDouble();
 
-        System.out.print("Enter an operator (+, -, *, /): ");
+        System.out.print("Enter an operator (+, -, *, /,%): ");
         char operator = scanner.next().charAt(0);
         scanner.close();
         double output;
@@ -31,6 +31,10 @@ public class JavaExample {
 
             case '/':
             	output = num1 / num2;
+                break;
+            
+            case '%':
+                output=num1%num2;
                 break;
 
             default:
