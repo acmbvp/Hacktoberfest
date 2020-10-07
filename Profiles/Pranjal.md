@@ -1,4 +1,4 @@
 Hello, 
 Myself Pranjal Mittal
 
-Github link: github.com/mittalpranjal12
+Github link: https://github.com/mittalpranjal12
