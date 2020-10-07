@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Lilita+One|Bangers|Fugaz+One|Paytone+One|Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round|Luckiest+Guy|Passion+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:700|Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	<div class="container" style="margin-top: 20px; height: 30px;">
+		<p style="color: black;font-size: 30px;"><b>PLAYER 1</b></p>
+		<p style="color: black;font-size: 30px;"><b> PLAYER 2</b></p>
+	</div>
+
+
+	 <div class="container" style="margin-top: 10px;" >
+
+	 
+	<table  border="1" style="border-color: none; border:none;outline-style: none;">
+		
+		<tr>
+			<td style="border-right: 7.5px solid white;" id="p1c1">
+				<button id="player1c1" style="font-size: 60px;"><b>X</b></button>
+
+			</td>
+
+			<td id="p1c2">
+				<button id="player1c2" style="font-size: 60px;"><b>O</b></button>
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<table>
+		<tr>
+			<td style="border-right: 7.5px solid white;" id="p2c1">
+				<button id="player2c1" style="font-size: 60px;"><b>X</b></button>
+
+			</td>
+			<td id="p2c2">
+				<button id="player2c2" style="font-size: 60px;"><b>O</b></button>
+			</td>
+		</tr>
+	</table>
+
+
+
+ 
+  
+</div>
+
+
+<div class="container" style="justify-content: center;">
+	<div style="width: 150px; background-color:#74eb34" >
+	<p style="font-family: Heebo;margin-left: 40px; margin-top: 10px;font-size: 20px;" id="turn" ><b>
+	</b>
+		
+	</p>
+
+</div>
+	
+</div>
+
+
+<div style="background-color:  #034f12;margin-top: 5%;padding-bottom: 1%;" id="showcase" >
+
+	<br>
+<table style="margin: auto; margin-top: 50px; margin-bottom: 50px;border-spacing: 0px;"  cellpadding="0"  >
+	<tr>
+		<td ><button id="1" style="width: 150px; height: 150px;border-left: 0px;border-right: 7.5px
+
+ solid white;
+
+border-bottom: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+		<td ><button id="10" style="width: 150px; height: 150px;border-bottom: 7.5px
+
+ solid white;
+
+border-right: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td >
+		<td ><button id="19" style="width: 150px; height: 150px;border-bottom: 7.5px
+
+ solid white;
+"></button>
+			
+		</td>
+	</tr>
+	<tr>
+		<td ><button id="11" style="width: 150px; height: 150px;border-right: 7.5px
+
+ solid white;
+
+border-bottom: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+		<td ><button id="20" style="width: 150px; height: 150px;border-right: 7.5px
+
+ solid white;
+
+ border-bottom: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+		<td ><button id="29" style="width: 150px; height: 150px;border-bottom: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+	</tr>
+	<tr>
+		<td ><button id="21" style="width: 150px; height: 150px;border-right: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+		<td ><button id="30" style="width: 150px; height: 150px;border-right: 7.5px
+
+ solid white;
+
+"></button>
+			
+		</td>
+		<td ><button id="39" style="width: 150px; height: 150px;"></button>
+			
+		</td>
+	</tr>
+</table>
+</div>
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/tictactoeAI.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+
+
+<script src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
