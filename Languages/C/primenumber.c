@@ -1,21 +1,32 @@
-#include <stdio.h> 
-  
-int main() 
-{ 
-int n, i, flag = 1; 
-printf("Enter a number: \n");  
-scanf("%d", &n); 
-for (i = 2; i <= sqrt(n) / 2; i++) { 
-if (n % i == 0) { 
-flag = 0; 
-break; 
-} 
-} 
-if (flag == 1) { 
-printf("%d is a prime number", n); 
-} 
-else { 
-printf("%d is not a prime number", n); 
-} 
-return 0; 
-} 
+  #include<stdio.h>
+
+int isPrime(int,int);
+
+int main(){
+
+    int num,prime;
+
+    printf("Enter a positive number: ");
+    scanf("%d",&num);
+
+    prime = isPrime(num,num/2);
+
+   if(prime==1)
+        printf("%d is a prime number",num);
+   else
+      printf("%d is not a prime number",num);
+
+   return 0;
+}
+// by recursion
+int isPrime(int num,int i){
+
+    if(i==1){
+        return 1;
+    }else{
+       if(num%i==0)
+         return 0;
+       else
+         isPrime(num,i-1);
+    }
+}
