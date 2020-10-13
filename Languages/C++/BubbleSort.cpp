@@ -17,6 +17,8 @@ void sort(int a[],int size)
 }
 int main()
 {
+	ios_base::sync_with_stdio(false);
+    	cin.tie(NULL);
 	int n;
 	cout<<"Enter Size of Array:";
 	cin>>n;
