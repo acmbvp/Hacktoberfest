@@ -1,0 +1,16 @@
+.movies__result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  @include mobile {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  & > a {
+    outline: none;
+    text-decoration: none;
+  }
+}

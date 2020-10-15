@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #FFFCF2;
+}
+
+::selection {
+  background: #f85210;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f85210;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cf3f06;
+}
+
+.navbar__toggler span {
+  transition: all 0.4s;
+  height: 4px;
+  width: 30px;
+  background: #f85210;
+  margin: 10px;
+  position: fixed;
+  left: 3rem;
+  top: 1rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar__toggler span {
+    top: 0.5rem;
+    left: 0rem;
+  }
+}
+
+.navbar__toggler span::before {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  color: #f85210;
+  background: #f85210;
+}
+
+.navbar__toggler span::after {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  color: #f85210;
+  background: #f85210;
+}
+
+.navbar__toggler.nav__toggler_active span, .navbar__toggler.nav__toggler_active span::before, .navbar__toggler.nav__toggler_active span::after {
+  background: #fff;
+}
+
+.navbar__toggler.nav__toggler_active span {
+  transform: rotate(-45deg);
+}
+
+.navbar__toggler.nav__toggler_active span::before {
+  display: none;
+}
+
+.navbar__toggler.nav__toggler_active span::after {
+  top: -0px;
+  transform: rotate(-270deg);
+}
+
+.navbar__bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: -10;
+  justify-content: center;
+  align-items: center;
+  background: #f85210;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar__bg_active {
+  transition: all 0.4s ease-in-out;
+  z-index: 8;
+  opacity: 1;
+}
+
+.navbar__bg ul {
+  list-style: none;
+}
+
+.navbar__bg ul a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar__bg ul a {
+    font-size: 2rem;
+  }
+}
+
+.navbar__bg ul a li {
+  margin: 4rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar__bg ul a li {
+    margin: 2rem 0;
+  }
+}
+
+header {
+  margin: 3rem auto;
+  text-align: center;
+  color: #FFFCF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 200%;
+  color: #f85210;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 540px) {
+  header h1 {
+    font-size: 150%;
+  }
+  header h1 svg {
+    display: none;
+  }
+}
+
+header form {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 540px) {
+  header form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header form {
+    display: block;
+  }
+}
+
+header form input {
+  border: none;
+  padding: 13px 16px;
+  border-radius: 7px;
+  flex: 3;
+  background: #fff;
+  transition: all 0.4s;
+  box-shadow: 0 2px 10px #fdd0bd;
+  border: 1px solid #e0dedc;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  header form input {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+header form input:focus {
+  box-shadow: 0 2px 10px #fcbea5;
+}
+
+header form button {
+  flex: 0.5;
+  background: #f85210;
+  color: #fff;
+  border: 2px solid #f85210;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #fdd0bd;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 540px) {
+  header form button {
+    padding: 13px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header form button {
+    width: 100%;
+    padding: 13px 16px;
+  }
+}
+
+header form button:focus {
+  box-shadow: 0 2px 4px #fcbea5;
+}
+
+header .error {
+  color: red;
+  margin: 1rem 0;
+}
+
+.movies__result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 540px) {
+  .movies__result {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.movies__result > a {
+  outline: none;
+  text-decoration: none;
+}
+
+.movie__card {
+  text-align: center;
+  border-radius: 7px;
+  margin: 0 1rem 2rem 0;
+  border: 1px solid #e0dedc;
+  box-shadow: 0 2px 5px #fdd0bd;
+  padding-bottom: 1rem;
+  transition: all 0.4s;
+}
+
+.movie__card:hover {
+  transform: scale(0.98);
+}
+
+.movie__card img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .movie__card img {
+    width: 100%;
+  }
+}
+
+.movie__card h4 {
+  text-decoration: none;
+  color: #f85210;
+}
+
+.loader__container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.loader__container .css-1emioiq {
+  margin-right: 3rem;
+}
+
+.loader__container h3 {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fb9a73;
+}
+
+.back__btn {
+  position: fixed;
+  z-index: 11;
+  top: 1rem;
+  right: 3rem;
+  margin-top: 10px;
+  background: #f85210;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  padding: 0.2em 10px;
+  cursor: pointer;
+}
+
+.movie__result {
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 540px) {
+  .movie__result {
+    display: block;
+  }
+}
+
+.movie__result .movie__poster img {
+  width: 100%;
+  border: 1px solid #f85210;
+  box-shadow: 0 2px 6px #f97642;
+  border-radius: 7px;
+}
+
+.movie__result .movie__details_list {
+  list-style: none;
+}
+
+.movie__result .movie__details_list li {
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=styles.css.map */

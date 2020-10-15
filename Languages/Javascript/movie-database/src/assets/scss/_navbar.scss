@@ -1,0 +1,112 @@
+
+.navbar__toggler {
+  
+  span {
+    transition: all 0.4s;
+    height: 4px;
+    width: 30px;
+    background: $primary-color;
+    margin: 10px;
+    position: fixed;
+    left: 3rem;
+    top: 1rem;
+    z-index: 10;
+    cursor: pointer;
+    
+    @include mobile {
+      top: 0.5rem;
+      left: 0rem;  
+    }
+
+    &::before { 
+      content: '';
+      cursor: pointer;
+      position: absolute;
+      top: -7px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      color: $primary-color;
+      background: $primary-color;
+    }
+
+    &::after { 
+      content: '';
+      cursor: pointer;
+      position: absolute;
+      top: 7px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      color: $primary-color;
+      background: $primary-color;
+    }
+  }
+
+  &.nav__toggler_active {    
+    span, span::before, span::after {
+      background: #fff;
+    }
+
+    span {
+      transform: rotate(-45deg);
+      
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        top: -0px;
+        transform: rotate(-270deg);
+      }
+    }
+  }
+}
+
+.navbar__bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: -10;
+  justify-content: center;
+  align-items: center;
+  background: $primary-color;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  
+  &_active {
+    transition: all 0.4s ease-in-out;
+    z-index: 8;
+    opacity: 1;
+  }
+
+  ul {
+    list-style: none;
+
+    a {
+
+      @include mobile {
+        font-size: 2rem;
+      }
+
+      text-decoration: none;
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+
+      li {   
+        @include mobile {
+          margin: 2rem 0;
+        }   
+
+        margin: 4rem 0;
+        color: #fff;
+        text-align: center;                     
+      }
+    }
+  }  
+}

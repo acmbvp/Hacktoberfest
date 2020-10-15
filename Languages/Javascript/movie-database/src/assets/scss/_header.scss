@@ -1,0 +1,87 @@
+header {
+  margin: 3rem auto;
+  text-align: center;
+  color: $accent-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+
+  h1 {
+    @include mobile {
+      font-size: 150%;
+      svg {display: none;}
+    }
+    font-size: 200%;
+    color: $primary-color;
+    margin: 1rem 0;
+  }
+
+  form {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include mobile-s {
+      display: block;
+    }
+
+    
+
+    input {
+      @include mobile-s {
+        width: 100%;
+        margin: 1rem 0;
+      }
+
+      border: none;
+      padding: 13px 16px;
+      border-radius: 7px;
+      flex: 3;
+      background: #fff;
+      transition: all 0.4s;
+      box-shadow: 0 2px 10px lighten($primary-color, 35%);
+      border: 1px solid lighten($bg-color, 80%);
+      margin-right: 1rem;
+
+      &:focus {
+        box-shadow: 0 2px 10px lighten($primary-color, 30%);;
+      }
+    }
+    
+    button {      
+      @include mobile {
+        padding: 13px 16px;
+      }
+
+      @include mobile-s {
+        width: 100%;
+        padding: 13px 16px;
+      }
+
+      flex: 0.5;
+      background: $primary-color;
+      color: #fff;
+      border: 2px solid $primary-color;
+      border-radius: 7px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px lighten($primary-color, 35%);
+      transition: all 0.4s;
+      
+      &:focus {
+        box-shadow: 0 2px 4px lighten($primary-color, 30%);
+      }
+    }
+  }
+
+  .error {
+    color: red;
+    margin: 1rem 0;
+  }
+
+}
