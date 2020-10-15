@@ -1,0 +1,20 @@
+.loader__container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .css-1emioiq {
+    margin-right: 3rem;
+  }
+
+  h3 {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: lighten($primary-color, 20%);
+  }
+
+}

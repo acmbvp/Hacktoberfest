@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: $accent-color;
+}
+
+::selection {
+  background: $primary-color;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary-color, 10%);
+} 
+
+@import 'mediaqueries';
+@import 'navbar';
+@import 'header';
+@import 'movies';
+@import 'moviecard';
+@import 'loader';
+@import 'movie';
