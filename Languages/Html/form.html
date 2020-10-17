@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .invalid{
+      color: red;
+    }
+  </style>
+  <body>
+    <!-- Akash Maurya, RollNo:- 118A3026 -->
+
+    <form action="" id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" /> <br />
+      <span class="invalid" id="invalid-name"></span>
+
+      <br>
+      <br />
+      <label for="address"> Address:</label>
+      <br />
+      <textarea name="address" id="address" cols="30" rows="3"></textarea><br>
+      <span class="invalid" id="invalid-address"></span>
+      <br /><br />
+
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" /><br>
+      <span class="invalid" id="invalid-dob"></span>
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+      <br>
+      <span class="invalid" id="invalid-email"></span>
+      <br /><br />
+
+      <label for="branch">Branch</label>
+      <input type="radio" name="branch" value="IT" checked >IT</input>
+      <input type="radio" name="branch" value="CE" >CE</input>
+      <input type="radio" name="branch" value="EXTC" >EXTC</input>
+      <input type="radio" name="branch" value="ME" >ME</input>
+      <br>
+      <span class="invalid" id="invalid-branch"></span>
+      <br><br>
+
+      <label for="hobbies">Hobbies</label>
+      <input type="checkbox" id="Dance"  value="Dance">
+      <label for="Dance">Dance</label><br>
+      <input type="checkbox" id="Code" value="Code">
+      <label for="Code"> Code</label><br>
+      <input type="checkbox" id="Sing" value="Sing">
+      <label for="Sing"> Sing</label><br>
+      <input type="checkbox" id="Other"  value="Other">
+      <label for="Other"> Other</label>
+      <br>
+      <span class="invalid" id="invalid-hobbies"></span>
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" />
+      <br>
+      <span class="invalid" id="invalid-password"></span><br>
+      <span class="invalid" id="invalid-lowercase"></span><br>
+      <span class="invalid" id="invalid-uppercase"></span><br>
+      <span class="invalid" id="invalid-specialChar"></span>
+
+      <br /><br />
+      <div type="submit" onclick="validate()" style="padding: 0.5rem; border: 1px solid black;width: 3rem;">Submit</button>
+    </form>
+
+    <script>
+      function validate() {
+        let validate = true;
+        name = document.getElementById("name").value;
+        address = document.getElementById("address").value;
+        dob = document.getElementById("dob").value;
+        email = document.getElementById("email").value;
+        dob_year = dob.slice(0, 4);
+        dance = document.getElementById('Dance').checked;
+        code = document.getElementById('Code').checked;
+        sing = document.getElementById('Sing').checked;
+        other = document.getElementById('Other').checked;
+        password = document.getElementById('password').value;
+
+        if (name.length == 0) {
+          document.getElementById("invalid-name").innerHTML = "Please Type Name"
+          validate = false;
+        } else{
+          document.getElementById("invalid-name").innerHTML = ""
+        }
+        if (address.length == 0) {
+          document.getElementById("invalid-address").innerHTML = "Please Type Address"
+          validate = false;
+        } else{
+          document.getElementById("invalid-address").innerHTML = ""
+        } 
+
+        if (dob.length == 0) {
+          document.getElementById("invalid-dob").innerHTML = "Please Type DOB"
+          validate = false;
+        } else{
+          if (2020 - dob_year < 22) {
+          document.getElementById("invalid-dob").innerHTML = "Age Should Be greater than 22"
+          validate = false
+          } else {
+            document.getElementById("invalid-dob").innerHTML = ""
+          }
+        }
+
+        if (email.length == 0) {
+          document.getElementById("invalid-email").innerHTML = "Please Type Email"
+          validate = false;
+        } else {
+            document.getElementById("invalid-email").innerHTML = ""
+          }
+        
+
+        // checkbpx Validation
+        if(!(dance || code || sing || other)){
+          document.getElementById("invalid-hobbies").innerHTML = "Please Select Atleast One Hobby"
+          validate = false
+        }else {
+            document.getElementById("invalid-hobbies").innerHTML = ""
+          }
+
+
+        // Validate length
+        if (password.length <= 6) {
+          document.getElementById("invalid-password").innerHTML = "Password Length should be greater than 6"
+          validate = false
+        } else{
+          // Pasword Validation
+          document.getElementById("invalid-password").innerHTML = ""
+
+          var lowerCaseLetters = /[a-z]/g;
+          if (!password.match(lowerCaseLetters)) {
+            document.getElementById("invalid-lowercase").innerHTML = "Atleast One lowercase Letter Required"
+            validate = false
+          } else {
+            document.getElementById("invalid-lowercase").innerHTML = ""
+          }
+
+          // Validate capital letters
+          var upperCaseLetters = /[A-Z]/g;
+          if (!password.match(upperCaseLetters)) {
+            document.getElementById("invalid-uppercase").innerHTML = "Atleast One Uppercase Letter Required"
+            validate = false
+          } else {
+            document.getElementById("invalid-uppercase").innerHTML = ""
+          }
+
+          specialChar = /[^A-Za-z0-9]/g
+          if(!password.match(specialChar)){
+            document.getElementById("invalid-specialChar").innerHTML = "Atleast One Spcial Character Letter Required"
+            validate = false
+          } else {
+            document.getElementById("invalid-specialChar").innerHTML = ""
+          }
+        }
+
+        if(validate){
+          alert("Validation Succesfull");
+        }
+      }
+    </script>
+  </body>
+</html>
