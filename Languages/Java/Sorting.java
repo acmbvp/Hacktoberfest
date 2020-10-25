@@ -1,8 +1,4 @@
-/*
-Joyal Raphel 
-CSE B S3
-ROLL :04
-*/
+
 import java.util.*;
 class Sorting{
     public static void main(String args[])
@@ -35,15 +31,3 @@ class Sorting{
        }
     }
 }
-/*
-enter the element of array
-44
-88
-7
-2
-3
-11
-99
-The elements of sorted array is :
-2 3 7 11 44 88 99
-*/
