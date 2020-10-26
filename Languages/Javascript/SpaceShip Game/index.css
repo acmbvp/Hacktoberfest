@@ -9,5 +9,9 @@ h1
    }
    body
    {
-   	background-image: url(img/sp1.jpg);
+      background-image: url(img/space-back.png);
+      background-repeat: repeat;
+      background-size: cover;
+
+
    }

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Little Manhattan",
+        "Rating" : "7.5",
+        "Release-year" : "2005"
+    },
+    {
+        "title": "Fast Five",
+        "Rating" : "9.0",
+        "Release-year" : "2012"
+    },
+    {
+        "title": "Avengers",
+        "Rating" : "9.5",
+        "Release-year" : "2011"
+    },
+    {
+        "title": "Shawshank Redemption",
+        "Rating" : "9.9",
+        "Release-year" : "1994"
+    },
+    {
+        "title": "La La Land",
+        "Rating" : "7.5",
+        "Release-year" : "2016"
+    }
+]

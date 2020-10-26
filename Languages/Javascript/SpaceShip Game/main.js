@@ -81,34 +81,34 @@ function move()
 	{
        spaceship.css(
        {
-       	left : spaceship.position().left -10
+       	left : spaceship.position().left -15
        })
 	}
 	if(direction.top)
 	{
 
 		spaceship.css({
-			top : spaceship.position().top - 10 
+			top : spaceship.position().top - 15 
 		})
 		
 	}
 	if(direction.right)
 	{  
 		spaceship.css({
-			left : spaceship.position().left + 10
+			left : spaceship.position().left + 15
 		})
 		
 	}
 	if(direction.bottom)
 	{
 		spaceship.css({
-			top : spaceship.position().top + 10
+			top : spaceship.position().top + 5
 		})
 		
 	}
 }
 
-setInterval(move,10)
+setInterval(move,25)
 
 
 })
