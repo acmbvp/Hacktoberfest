@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Palette by Fitri</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="container">Color Palette by Fitri</h1>
+<div class="input-wrapper">
+  <label id="formItem"> Background Color: </label>
+  <input type="color" id="bg-color" />
+  <br>
+  <label>Text Color: </label>
+  <input type="color" id="text-color" />
+</div>
+
+<script>
+  let bgColor = document.getElementById('bg-color');
+  let txtColor = document.getElementById('text-color');
+
+    bgColor.addEventListener("change", (event) => {
+      document.body.style.backgroundColor = bgColor.value;
+    });
+
+    txtColor.addEventListener("change", (event) => {
+      document.body.style.color = txtColor.value;
+    });
+  </script>
+
+</body>
+</html>
