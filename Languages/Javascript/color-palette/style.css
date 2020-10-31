@@ -1,0 +1,22 @@
+body {
+    font-family: Helvetica neue, roboto;
+   }
+   
+   .container {
+       position: absolute;
+       top: 35%;
+       left: 50%;
+       transform: translateX(-50%) translateY(-50%);
+   }
+   input {
+     width: 100px;
+     display: block;
+     margin: 6px;
+   }
+   
+   .input-wrapper {
+     position: absolute;
+       top: 60%;
+       left: 50%;
+       transform: translateX(-50%) translateY(-50%);
+   }
