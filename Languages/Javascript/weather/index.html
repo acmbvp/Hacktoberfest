@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actual Weather Argentina</title>
+</head>
+<body class="container">
+  <h1>Weather Argentina</h1>
+  <div id="weather">
+    
+  </div>
+
+  <script> 
+    getTemprature();
+
+    async function getTemprature() {
+      const apiURL = "http://api.openweathermap.org/data/2.5/weather?q=Argentina&appid=654f6794723ddb59225198c48a4b9c16";
+      await fetch(apiURL)
+        .then((response) => {
+          console.log(response);
+          document.getElementById('weather').innerHTML = JSON.stringify(response.body);
+        })
+        .catch((err) => {
+          console.log(err);
+          document.getElementById('weather').innerHTML = JSON.stringify(err);
+        });
+    }
+  </script>
+</body>
+</html>
