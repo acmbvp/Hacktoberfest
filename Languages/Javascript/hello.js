@@ -1,6 +1,6 @@
 // Language: Javascript
 // ENV: Node.js
-// Author: Tushar
-// Github: https://github.com/tchhuneja
-console.log('Hello world');
+// Author: Krishn
+// Github: https://github.com/phovious-14
+console.log('Hello World');
 
