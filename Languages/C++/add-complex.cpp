@@ -15,7 +15,8 @@ int main()
     char signOfImag;
 
 
-    cout<< "1st commit"
+    cout<< "1st commit";
+    cout<<" 2nd commit";
     cout << "For 1st complex number," << endl;
     cout << "Enter real and imaginary parts respectively:" << endl;
     cin >> n1.real >> n1.imag;
