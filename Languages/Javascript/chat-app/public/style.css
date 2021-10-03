@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border-radius: 20px;
+    font-family: sans-serif;
   }
   body,
   html {
@@ -61,7 +62,7 @@
     /* border: 1px solid green; */
   }
   .message {
-    background: rgb(225, 235, 225);
+    background: #bbdfe6;
     color: rgb(77, 73, 73);
     padding: 7px;
     margin: 5px;
@@ -75,7 +76,7 @@
   .message-left {
     float: left;
     background-color: #dcdcdc;
-    color: #252121;
+    color: rgb(77, 73, 73);
     border-radius: 3px;
   }
   .message-right {
