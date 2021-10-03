@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 20px;
   }
   body,
   html {
@@ -33,7 +34,7 @@
   }
   .user {
     padding: 15px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #63b6c5;
   }
   .user:hover {
     background-color: #4e4747;
@@ -42,7 +43,7 @@
   }
   .user.active {
     background-color: rgb(93, 88, 88);
-    color: #eae8e8;
+    color: #63b6c5;
   }
   .message-container {
     display: grid;
