@@ -1,0 +1,537 @@
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  color: #5a5a5a;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  padding: 0;
+  margin-bottom: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #666;
+  margin-top: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.centered {
+  text-align: center
+}
+
+.mt {
+  margin-top: 50px;
+}
+
+.mb {
+  margin-bottom: 50px;
+}
+
+.mtb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mtb2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ptb {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #2B2E31;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition: background-color .4s linear, color .4s linear;
+  -o-transition: background-color .4s linear, color .4s linear;
+  -ms-transition: background-color .4s linear, color .4s linear;
+  transition: background-color .4s linear, color .4s linear;
+  color: #1abc9c;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #696E74;
+}
+
+.nopadding {
+  padding: 0px !important;
+  margin: 0px;
+}
+
+/* FORM CONFIGURATION */
+
+input {
+  font-size: 16px;
+  min-height: 40px;
+  border-radius: 25px;
+  line-height: 20px;
+  padding: 15px 30px 16px;
+  border: 1px solid #b9b9af;
+  margin-bottom: 10px;
+  background-color: #fff;
+  opacity: 0.9;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.subscribe-input {
+  float: left;
+  width: 65%;
+  text-align: left;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-input {
+    width: 100%;
+  }
+}
+
+.subscribe-submit {
+  right: 0;
+}
+
+.btn-download {
+  background: #FDE3A7;
+}
+
+/*Buttons Configuration */
+
+.btn-conf {
+  border-radius: 50px;
+  margin-right: 15px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 18px 28px 17px 28px;
+}
+
+.btn-conf-2 {
+  border-radius: 50px;
+  margin-right: 15px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 28px 11px 28px;
+  margin-top: 20px;
+}
+
+.btn-green {
+  background: #03C9A9;
+  color: white
+}
+
+/* HEADER SECTION */
+
+#h {
+  background: url(img/header.jpg) no-repeat center top; 
+  padding-top: 180px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 700px;
+  width: 100%;
+  color: white;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#h .logo {
+  top: 30px;
+  left: 45px;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+}
+
+#h .social {
+  top: 30px;
+  right: 45px;
+  font-size: 20px;
+  position: absolute;
+}
+
+#h .social i {
+  margin-left: 20px;
+}
+
+#h .social a {
+  color: white;
+}
+
+#h h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+  #h .logo {
+    top: auto;
+    left: auto;
+    font-size: 30px;
+    font-weight: 900;
+    position: static;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  #h {
+    padding-top: 40px;
+  }
+
+  #h h1 {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+/* Store Links */
+
+.store img {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* SEP */
+
+#sep {
+  background: url(../img/sep.jpg) no-repeat center top;
+  padding-top: 90px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 450px;
+  width: 100%;
+  color: white;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#sep h4 {
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+/* Pricing Tables */
+
+.price-table {
+  border: 2px solid #5a5a5a;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 5px;
+}
+
+.price-table .p-head {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 80px;
+  border-bottom: 2px solid #ccc;
+}
+
+.price-table .p-body .features li {
+  color: #333333;
+  border-bottom: 2px solid #ccc;
+  padding: 24px 0px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.p-body .price .detail {
+  font-weight: 700;
+  font-size: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.p-body .price .sub {
+  font-size: 18px;
+  color: #ccc;
+  position: relative;
+  bottom: 10px;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* SPONSORS */
+
+#g {
+  background: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sponsor img {
+  max-width: 140px;
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+.sponsor .col-sm-2 {
+  height: 80px;
+  line-height: 80px;
+}
+
+/* GREEN SECTION - TESTIMONIAL */
+
+#green {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  min-height: 300px;
+  background: #03C9A9;
+  color: white;
+}
+
+#green tgr {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+
+#f {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f2f2f;
+  color: white;
+}
+
+#f h5 {
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+#f i {
+  font-size: 45px;
+  margin: 15px;
+}
+
+#f a {
+  color: #b9b9b9;
+}
+
+#f a:hover {
+  color: #03C9A9;
+}
+
+/* Contact Form */
+
+.contact-form {
+  padding-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  height: auto;
+}
+
+.contact-form .form-send {
+  text-align: center;
+}
+
+.contact-form .form-send button {
+  background: #03C9A9;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact-form .form-send button:hover {
+  background: #13dfbe;
+}
+
+.contact-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact-form .loading {
+  display: none;
+  color: #555;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.contact-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.contact-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.contact-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Copyrights */
+
+#copyrights {
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#copyrights a {
+  color: #13dfbe;
+}
+
+.credits {
+  color: #999;
+}
