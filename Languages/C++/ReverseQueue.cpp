@@ -2,13 +2,16 @@
 #include <queue>
 using namespace std;
 
-void reverseQueue(queue<int> &q) {
-  if(q.size()<=1)
-    return ;
-  int x= q.front();
-  q.pop();
-  reverseQueue(q);
-  q.push(x);
+void reverseQueue(queue<int> &Queue) {
+ stack<int> Stack; 
+	while (!Queue.empty()) { 
+		Stack.push(Queue.front()); 
+		Queue.pop(); 
+	} 
+	while (!Stack.empty()) { 
+		Queue.push(Stack.top()); 
+		Stack.pop(); 
+	} 
 
 }
 int main() {
