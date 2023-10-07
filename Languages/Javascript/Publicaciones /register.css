@@ -1,0 +1,58 @@
+/* Estilos generales para el formulario */
+body {
+  display: flex;
+  justify-content: center;
+}
+main {
+  text-align: center;
+  padding: 20px;
+  background-color: wheat;
+  width: 80%;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos para los contenedores de input */
+.correo-container,
+.nombre-container,
+.foto-container {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón (si lo agregas) */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
