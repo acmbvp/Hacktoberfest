@@ -1,431 +1,232 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-
-class node
+struct node
 {
-public:
     int data;
-    node*next;
+    struct node *next;
+} *head;
 
-    node(int data)
-    {
-        this->data=data;
-        this->next=NULL;
-    }
-};
-
-
-class LinkedList
+void create(int v)
 {
-   private:
-    node*head;
-    node*tail;
-    int size;
-
-    void displayreverse(node*temp)
+    struct node *tmp, *q;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->data = v;
+    tmp->next = NULL;
+    if (head == NULL)
     {
-        if(temp==NULL)
+        head = tmp;
+    }
+    else
+    {
+        q = head;
+        while (q->next != NULL)
         {
-            return;
+            q = q->next;
         }
-        displayreverse(temp->next);
-        cout<<temp->data<<" ";
+        q->next = tmp;
     }
+}
 
-    public:
-
-    LinkedList()
+int display()
+{
+    struct node *q;
+    if (head == NULL)
     {
-        head=NULL;
-        tail=NULL;
-        size=0;
+        cout << "List is empty"<<endl;
+        return 0;
     }
-
-
-
-    //to input data
-    void inputdata()
+    else
     {
-        int data;
-        cin>>data;
-
-        while(data!=-1)
+        q = head;
+        cout << "The list is:- ";
+        while (q != NULL)
         {
-            node*newnode=new node(data);
-
-            if(this->head==NULL)
-            {
-                this->head=newnode;
-                this->tail=newnode;
-            }
-
-            else{
-                this->tail->next=newnode;
-                this->tail=newnode;
-            }
-
-            this->size++;
-            cin>>data;
+            cout << q->data << " ";
+            q = q->next;
         }
     }
+    cout << endl;
+}
 
+void add_start(int d)
+{
+    struct node *tmp;
+    tmp->data = d;
+    tmp->next = head;
+    head = tmp;
+}
 
-
-
-
-    //to display data
-    void display()
+void add_between(int b, int pos)
+{
+    int i;
+    struct node *tmp, *q;
+    q = head;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->data = b;
+    for (i = 0; i < pos - 1; i++)
     {
-        node*temp=head;
-        while(temp!=NULL)
-        {
-            cout<<temp->data<<" ";
-            temp=temp->next;
-        }
+        q = q->next;
     }
+    tmp->next = q->next;
+    q->next = tmp;
+}
 
-
-
-
-
-    //if size of list is 0
-    void handlesize0case(int data)
+int del(int e)
+{
+    struct node *tmp, *q;
+    if (head->data == e)
     {
-        node*newnode=new node(data);
-        this->head=newnode;
-        this->tail=newnode;
-        this->size++;
+        tmp = head;
+        head = head->next;
+        free(tmp);
+        return 0;
     }
-
-
-
-
-    //add element at last
-    void addlast(int data)
+    q = head;
+    while (q->next->next != NULL)
     {
-        if(size==0)
+        if (q->next->data == e)
         {
-            handlesize0case(data);
-            return;
+            tmp = q->next;
+            q->next = tmp->next;
+            free(tmp);
+            return 0;
         }
-
-        node*newnode=new node(data);
-
-        this->tail->next=newnode;
-        this->tail=newnode;
-
-        this->size++;
+        q = q->next;
     }
-
-
-
-
-    //add element at first
-    void addfirst(int data)
+    if (q->next->data == e)
     {
-         if(size==0)
-        {
-            handlesize0case(data);
-            return;
-        }
-
-        node*newnode=new node(data);
-
-        newnode->next=head;
-        this->head=newnode;
-
-        this->size++;
-
+        tmp = q->next;
+        free(tmp);
+        q->next = NULL;
+        return 0;
     }
+}
 
-
-
-    //get first element
-    int getfirst()
+int rev()
+{
+    struct node *p1, *p2, *p3;
+    if (head->next == NULL)
     {
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-        return head->data;
+        return 0;
     }
-
-
-
-
-    //get last element
-    int getlast()
+    p1 = head;
+    p2 = p1->next;
+    p3 = p2->next;
+    p1->next = NULL;
+    p2->next = p1;
+    while (p3 != NULL)
     {
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-        return tail->data;
+        p1 = p2;
+        p2 = p3;
+        p3 = p3->next;
+        p2->next = p1;
     }
+    head = p2;
+}
 
-
-
-    //get element at specific index
-    int getat(int index)
+void count()
+{
+    int cnt = 0;
+    struct node *q;
+    q = head;
+    while (q != NULL)
     {
-        if(index<0 || index>=this->size)
-        {
-            cout<<"invalid index";
-            return -1;
-        }
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-
-        node*temp=head;
-        int lv=0;
-        while(lv!=index)
-        {
-            temp=temp->next;
-            lv++;
-        }
-
-        return temp->data;
+        cnt += 1;
+        q = q->next;
     }
+    cout << "Total elements in the list are:- " << cnt << endl;
+}
 
-
-
-
-
-    //get node of specific index
-     node* getnodeat(int index)
+int search(int f)
+{
+    struct node *q;
+    q = head;
+    while (q != NULL)
     {
-        if(index<0 || index>=this->size)
+        if (q->data == f)
         {
-            cout<<"invalid index";
-            return NULL;
+            cout << "Item found" << endl;
+            return 0;
         }
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return NULL;
-        }
-
-        node*temp=head;
-        int lv=0;
-        while(lv!=index)
-        {
-            temp=temp->next;
-            lv++;
-        }
-
-        return temp;
+        q = q->next;
     }
-
-
-
-    //add element at specific index
-    void addat(int data,int index)
-    {
-        if(size==0)
-        {
-          node*newnode=new node(data);
-          this->size++;
-          head=newnode;
-          tail=newnode;
-          return;
-        }
-        else if(index==0)
-        {
-            addfirst(data);
-            return;
-        }else if(index==this->size-1)
-        {
-            addlast(data);
-            return;
-        }else if(index<0 || index>=this->size)
-        {
-            cout<<"invalid index";
-            return;
-        }
-
-        node*nm1=getnodeat(index-1);
-        node*np1=getnodeat(index);
-        node*newnode=new node(data);
-        nm1->next=newnode;
-        newnode->next=np1;
-        this->size++;
-
-    }
-
-
-    //handle remove case for size=1
-    int handlecasesize1()
-    {
-            node*ntr=head;
-            head=NULL;
-            tail=NULL;
-            int data=ntr->data;
-            delete ntr;
-            this->size--;
-            return data;
-    }
-
-
-    //to remove first element
-    int removefirst()
-    {
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-        if(size==1)
-        {
-           int data= handlecasesize1();
-           return data;
-        }
-       node*ntr=head;
-       this->head=this->head->next;
-       int data=ntr->data;
-       delete ntr;
-       this->size--;
-       return data;
-
-    }
-
-
-
-    //remove last element
-    int removelast()
-    {
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-        if(size==1)
-        {
-            int data= handlecasesize1();
-           return data;
-        }
-        node*ntr=tail;
-        node*temp=getnodeat(this->size-2);
-        temp->next=NULL;
-        int dd=ntr->data;
-        delete ntr;
-        this->size--;
-        return dd;
-    }
-
-    //display reverse
-    void displayreverse()
-    {
-        node*temp=this->head;
-        displayreverse(temp);
-    }
-
-
-
-    //remove element at index
-    int removeat(int index)
-    {
-        if(size==0)
-        {
-            cout<<"list is empty";
-            return -1;
-        }
-        else if(index<0 || index>=this->size)
-        {
-            cout<<"invalid arguements";
-        }
-        else if(index==1)
-        {
-            int ans=removefirst();
-            return ans;
-        }
-        else if (index==this->size-1)
-        {
-            int ans=removelast();
-            return ans;
-        }
-        node*nm1=getnodeat(index-1);
-        node*nn=nm1->next;
-        node*np1=nn->next;
-
-        nm1->next=np1;
-
-        int dd=nn->data;
-        delete nn;
-        this->size--;
-
-        return dd;
-    }
-
-
-
-};
-
-
-
-
+    cout<<"Item not found"<<endl;
+}
 
 
 int main()
 {
-   LinkedList*list=new LinkedList();
-   list->inputdata();
-   cout<<"display data"<<endl;
-   list->display();
+    head = NULL;
+    int ch, n, v, d, pos, b, e, f;
+    while (1)
+    {
+        cout << "0) Exit" << endl;
+        cout << "1) Create" << endl;
+        cout << "2) Display" << endl;
+        cout << "3) Add at beginning" << endl;
+        cout << "4) Add in between" << endl;
+        cout << "5) Delete a node" << endl;
+        cout << "6) Reverse list" << endl;
+        cout << "7) Count total elements " << endl;
+        cout << "8) Search a element " << endl;
+        cout << "Enter your choice:- " << endl;
+        cin >> ch;
+        switch (ch)
+        {
+        case 0:
+            exit(0);
+            break;
 
-    cout<<endl<<"adding 10 at last";
-   cout<<endl;
+        case 1:
+            cout << "How many nodes will you want to create:- ";
+            cin >> n;
+            for (int i = 0; i < n; i++)
+            {
+                cout << "Enter the element:- ";
+                cin >> v;
+                create(v);
+            }
+            break;
 
-   list->addlast(10);
-    list->display();
+        case 2:
+            display();
+            break;
 
-    cout<<endl<<"adding 20 at first";
-    cout<<endl;
+        case 3:
+            cout << "Enter the element that you want to add at begining:- ";
+            cin >> d;
 
-   list->addfirst(20);
-    list->display();
+            add_start(d);
+            break;
 
-    cout<<endl<<"printing first element";
-    int data=list->getfirst();
-    cout<<endl<<data;
+        case 4:
+            cout << "Enter the element that you want to add in between:- ";
+            cin >> b;
+            cout << "Enter the position:- ";
+            cin >> pos;
+            add_between(b, pos);
+            break;
 
-    cout<<endl<<"printing last element";
-    data=list->getlast();
-    cout<<endl<<data;
+        case 5:
+            cout << "Enter the element that you want to delete:- ";
+            cin >> e;
+            del(e);
+            break;
 
-    cout<<endl<<"getting element at index 5";
-    data=list->getat(5);
-    cout<<endl<<data;
+        case 6:
+            rev();
+            break;
 
-    cout<<endl<<"getting node at index 4";
-    node*dd=list->getnodeat(4);
-    cout<<endl<<dd;
-    cout<<endl<<dd->data;
+        case 7:
+            count();
+            break;
 
-    cout<<endl<<"adding element 49 at index 3";
-    list->addat(49,3);
-    cout<<endl;
-    list->display();
-
-    cout<<endl<<"removing first element";
-    data=list->removefirst();
-    cout<<endl<<data;
-
-    cout<<endl<<"removing last element";
-     data=list->removelast();
-    cout<<endl<<data;
-
-    cout<<endl<<"display reverse";
-    cout<<endl;
-    list->displayreverse();
-
-
-    cout<<endl<<"remove at index 3";
-    data=list->removeat(3);
-    cout<<endl<<data;
+        case 8:
+            cout << "Enter the element that you want to search:- " << endl;
+            cin >> f;
+            search(f);
+            break;
+        }
+    }
 }
