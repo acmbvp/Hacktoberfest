@@ -4,19 +4,20 @@ using namespace std;
 int binarySearch(int arr[], int size, int x){
     int beg = 0;
     int end = size - 1;
-    while(beg <= end){
-        int mid = end + (beg - end)/2;
-        if(arr[mid] == x){
-            return mid;
-        }
-        else if(arr[mid] >= x){
-            end = mid-1;
-        }
-        else{
-            beg = mid+1;
-        }
+   if(beg>end)
+    return false;
+
+    int mid = beg+ (end-beg)/2;
+
+    if (arr[mid] == x)
+    return true;
+
+    if(arr[mid]>x){
+        binarySearch(arr, beg, mid-1, x);
     }
-    return -1;
+    else{
+        binarySearch(arr, mid+1, end, x);
+    }
 }
 
 int main(){
