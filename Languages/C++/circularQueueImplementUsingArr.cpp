@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 class CircularQueue {
 private:
@@ -26,35 +27,35 @@ public:
 
     void enqueue(int value) {
         if (isFull()) {
-            std::cout << "Queue is full. Cannot enqueue.\n";
+            cout << "Queue is full. Cannot enqueue.\n";
             return;
         }
 
         arr[rear] = value;
         rear = (rear + 1) % capacity;
-        std::cout << "Enqueued: " << value << std::endl;
+        cout << "Enqueued: " << value << endl;
     }
 
     int dequeue() {
         if (isEmpty()) {
-            std::cout << "Queue is empty. Cannot dequeue.\n";
+            cout << "Queue is empty. Cannot dequeue.\n";
             return -1; 
         }
 
         int value = arr[front];
         front = (front + 1) % capacity;
-        std::cout << "Dequeued: " << value << std::endl;
+        cout << "Dequeued: " << value << endl;
         return value;
     }
 
     void display() {
         int i = front;
-        std::cout << "Queue: ";
+        cout << "Queue: ";
         while (i != rear) {
-            std::cout << arr[i] << " ";
+            cout << arr[i] << " ";
             i = (i + 1) % capacity;
         }
-        std::cout << std::endl;
+        cout << endl;
     }
 };
 // some examples : 
