@@ -63,10 +63,10 @@
         <script>
         
         // Does some basic checking of user data then stores user data in localStorage
+        // WARNING: Storing passwords in localStorage is not secure. This is for demonstration only.
         function registerUser(){
             
             var usrObject = {};
-
             //Extract the name and password that the user has entered
             usrObject.registername = document.getElementById("registername").value;
             usrObject.registerpassword = document.getElementById("registerpassword").value;
@@ -79,23 +79,23 @@
         }
             
         function checkLogin(){ //extract details of logged in user
-            if(localStorage.loggedInUsrEmail !-- undefined){
-                var usrObj = JSON.parse(localStorage[localStorage.loggedinUsrEmail]);
+            if(localStorage.loggedInUsrEmail !== undefined){
+                var usrObj = JSON.parse(localStorage.getItem(localStorage.loggedInUsrEmail));
                 document.getElementById("loginPara").innerHTML = usrObj.registername + "logged in."; //greet logged in user
             }
             
         }
         
         function login(){
-            var email = document.getElementById("registeremail").value; //get email address
-            
+            var email = document.querySelector("#loginPara #registeremail").value; //get email address from login form
+
             if(localStorage[email] === undefined) { //users that dont have account
                 document.getElementById("loginFailure").innerHTML = "Email not recognised. Do you have an account?"; //inform failure to user
                 return;
             }
             else{
                 var usrObj = JSON.parse(localStorage[email]); //convert to object
-                var password = document.getElementById("registerpassword").value;
+                var password = document.querySelector("#loginPara #registerpassword").value;
                 if (password === usrObj.registerpassword){ //successful login
                     document.getElementById("loginPara").innerHTML = usrObj.registername + "logged in.";
                     document.getElementById("loginFailure").innerHTML = ""; // clear login failures

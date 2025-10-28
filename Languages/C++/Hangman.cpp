@@ -25,19 +25,19 @@ int main()
 	cout<<"Player's 1 turn.Player 1 needs to enter word-";
 	getline(cin,word);  //Input String
 	cout<<word<<endl;;
-	cout<<"Enter hint for Player 2-";
-	getline(cin,hint);
-	cout<<hint<<endl;
-	for(i=0;word[i]!='&#092;&#048;';i++)
+    cout<<"Enter hint for Player 2-";
+    getline(cin,hint);
+    cout<<hint<<endl;
+	for(i=0; i < word.length(); i++)
 		word[i]=toupper(word[i]); //Convert the input String into uppercase
 
 
-	system("clear"); // Clear the entered string
+	cout << string(50, '\n'); // Clear the screen in a portable way
 	cout<<"\nNow It is time for Player 2 to guess ";
 
-	for(i=0;word[i]!='&#092;&#048;';i++)
+	duplicate.resize(word.length(), '-'); // Properly size the duplicate string
+	for(i=0; i < word.length(); i++)
 	{	cout<<"-" ; //Convert the input String into dashes
-	    duplicate[i]='-';
 	}
 
 	cout<<"\n\n";
@@ -59,9 +59,9 @@ int main()
 			cin>>letter;
 			letter=toupper(letter); // Convert into Upper case
 			cout<<letter<<endl;
-			used[number]=letter;// To show used letters
+			used += letter; // Append used letter to the string
 
-			for(i=0;word[i]!='&#092;&#048;';i++)
+			for(i=0; i < word.length(); i++)
 				if(word[i]==letter) // To check whether character is present
 				{
 					duplicate[i]=word[i];
@@ -82,8 +82,8 @@ int main()
 				cout<<endl;
 			}
 			cout<<"Letter used\n";
-			for(int f=1;f<=number;f++)
-				cout<<used[f]<<","; //To display used letters
+			for(char used_char : used)
+				cout << used_char << ","; //To display used letters
 			cout<<endl<<endl;
 			if(chances==0)
 			{
@@ -95,8 +95,8 @@ int main()
 		{
 			cout<<"Enter word-";
 		    cin>>guess;
-			cout<<guess<<endl;
-			for(i=0;guess[i]!='&#092;&#048;';i++)
+            cout<<guess<<endl;
+			for(i=0; i < guess.length(); i++)
 		        guess[i]=toupper(guess[i]); //Convert the input String into uppercase
 
 			int x = word.compare(guess); // 0 if strings are same
