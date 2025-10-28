@@ -119,17 +119,19 @@
                 //All of the keys should point to user data except loggedInUser
                 if(key !== "loggedInUser"){
                     //Extract object containing user data
+                    var usrObj = JSON.parse(localStorage[key]);
 
                     //Extract user name and top score
-                    htmlStr += "David";
+                    htmlStr += "<tr><td>" + usrObj.username + "</td><td>" + usrObj.topscore + "</td></tr>";
                     //Add a table row to the HTML string.
                 }
             }
            
             //Finish off the table
             htmlStr += "</table>";
-           
+
             //Add the table to the page.
+            rankingDiv.innerHTML = htmlStr;
 
         }
     
